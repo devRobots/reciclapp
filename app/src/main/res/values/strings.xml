@@ -11,4 +11,12 @@
     <string name="fragment_login_cedula">Cedula</string>
     <string name="fragment_login_contrasenia">Contraseña</string>
     <string name="fragment_login_ingresar">Ingresar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_registro_nombre">Nombre Completo</string>
+    <string name="fragment_registro_cedula">Cedula</string>
+    <string name="fragment_registro_contrasenia">Contraseña</string>
+    <string name="fragment_registro_correo">Correo Electronico</string>
+    <string name="fragment_registro_direccion">Direccion</string>
+    <string name="fragment_registro_registrar">Registrar</string>
 </resources>

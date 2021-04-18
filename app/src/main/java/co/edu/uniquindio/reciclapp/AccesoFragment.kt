@@ -1,5 +1,6 @@
 package co.edu.uniquindio.reciclapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,6 +25,9 @@ class AccesoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val btnAccesoIngresar = view.findViewById<Button>(R.id.btnAccesoIngresar)
         btnAccesoIngresar.setOnClickListener{ findNavController().navigate(R.id.loginFragment) }
+
+        val btnAccesoRegistrar = view.findViewById<Button>(R.id.btnAccesoRegistrar)
+        btnAccesoRegistrar.setOnClickListener{ findNavController().navigate(R.id.registroFragment) }
     }
 
 }
