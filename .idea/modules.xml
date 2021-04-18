@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reciclapp.iml" filepath="$PROJECT_DIR$/.idea/modules/reciclapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Reciclapp.iml" filepath="$PROJECT_DIR$/.idea/modules/Reciclapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Reciclapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Reciclapp.app.iml" />
     </modules>
   </component>
 </project>

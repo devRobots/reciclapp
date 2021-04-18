@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main_nav"
+	app:startDestination="@id/accesoFragment">
+
+	<fragment
+		android:id="@+id/accesoFragment"
+		android:name="co.edu.uniquindio.reciclapp.AccesoFragment"
+		android:label="fragment_acceso"
+		tools:layout="@layout/fragment_acceso" />
+</navigation>
