@@ -6,4 +6,9 @@
     <string name="fragment_acceso_registro">Registro</string>
     <string name="fragment_acceso_quienes_somos">¿Quiénes somos?</string>
     <string name="fragment_acceso_content_logo">Logo de la CRQ</string>
+
+    <!-- Strings del Fragment Login -->
+    <string name="fragment_login_cedula">Cedula</string>
+    <string name="fragment_login_contrasenia">Contraseña</string>
+    <string name="fragment_login_ingresar">Ingresar</string>
 </resources>

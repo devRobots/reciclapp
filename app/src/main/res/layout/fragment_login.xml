@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AccesoFragment">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="40dp"
         android:layout_weight="1"
-        android:background="@color/primario"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:contentDescription="@string/fragment_acceso_content_logo"
-            android:src="@drawable/logo_crq_blanco" />
+            android:src="@drawable/logo_crq_verde" />
     </LinearLayout>
 
     <LinearLayout
@@ -27,29 +25,32 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:layout_weight="0.5"
-        android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnAccesoIngresar"
+        <EditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/secundario"
-            android:text="@string/fragment_acceso_ingresar" />
+            android:autofillHints=""
+            android:hint="@string/fragment_login_cedula"
+            android:inputType="number|text|textEmailAddress|phone"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/fragment_login_contrasenia"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/primario"
-            android:text="@string/fragment_acceso_registro" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/secundario_variante"
-            android:text="@string/fragment_acceso_quienes_somos" />
+            android:text="@string/fragment_login_ingresar" />
     </LinearLayout>
 
 </LinearLayout>
