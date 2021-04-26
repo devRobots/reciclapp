@@ -27,4 +27,9 @@
     <string name="fragment_reciclar1_carton">Cartón</string>
     <string name="fragment_reciclar1_vidrio">Vidrio</string>
     <string name="fragment_reciclar1_plastico_pet">Plástico PET</string>
+    <string name="fragment_reciclar2_titulo">DIA Y HORA DE RETIRO</string>
+    <string name="fragment_reciclar2_fechaDeRetiro">Fecha de retiro</string>
+    <string name="fragment_reciclar2_horaRetiro">Hora de retiro</string>
+    <string name="fragment_reciclar3_titulo">Confirmar el retiro</string>
+    <string name="fragment_reciclar3_confirmar">Confirmar</string>
 </resources>

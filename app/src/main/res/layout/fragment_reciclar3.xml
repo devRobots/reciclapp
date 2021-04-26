@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Reciclar3Fragment">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/fragment_reciclar3_titulo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtReciclar3Direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@android:drawable/ic_menu_mylocation"
+                android:gravity="left|center_vertical"
+                android:text="Direccion" />
+
+            <TextView
+                android:id="@+id/txtReciclar3Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:gravity="left|center_vertical"
+                android:text="viernes 02 agosto" />
+
+            <TextView
+                android:id="@+id/txtReciclar3Hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@android:drawable/ic_menu_recent_history"
+                android:gravity="left|center_vertical"
+                android:text="9:00 - 11:00" />
+
+            <TextView
+                android:id="@+id/txtReciclar3TotalMateriales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@android:drawable/ic_menu_report_image"
+                android:gravity="left|center_vertical"
+                android:text="Total de materiales: 98" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtReciclar3Plastico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@android:drawable/ic_menu_manage"
+                android:gravity="center"
+                android:text="28"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtReciclar3Vidrio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:gravity="center"
+                android:text="21"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtReciclar3Carton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@android:drawable/ic_menu_preferences"
+                android:gravity="center"
+                android:text="49"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReciclar3Confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_reciclar3_confirmar" />
+</LinearLayout>

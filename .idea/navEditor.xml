@@ -72,8 +72,32 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-285" />
-                            <option name="y" value="-309" />
+                            <option name="x" value="-340" />
+                            <option name="y" value="-318" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="reciclar2Fragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-154" />
+                            <option name="y" value="-481" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="reciclar3Fragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="86" />
+                            <option name="y" value="-582" />
                           </Point>
                         </option>
                       </LayoutPositions>
