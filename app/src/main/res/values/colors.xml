@@ -5,6 +5,14 @@
 	<color name="secundario">#00A5D3</color>
 	<color name="secundario_variante">#006E8C</color>
 
+	<color name="resaltado_1">#085394</color>
+	<color name="resaltado_2">#009E0B</color>
+	<color name="resaltado_3">#134F5C</color>
+
+
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
+	<color name="gray">#EEF0F2</color>
+	<color name="red">#e61710</color>
+	<color name="dark_gray">#003748</color>
 </resources>
