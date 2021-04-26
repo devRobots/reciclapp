@@ -19,4 +19,12 @@
     <string name="fragment_registro_correo">Correo Electronico</string>
     <string name="fragment_registro_direccion">Direccion</string>
     <string name="fragment_registro_registrar">Registrar</string>
+    <string name="fragment_reciclar1_titulo">CUENTA Y RECICLA</string>
+    <string name="fragment_reciclar1_subtitulo">tu material reciclable</string>
+    <string name="fragment_reciclar1_checkboxText">¿ Tienes papel para reciclar ?</string>
+    <string name="fragment_reciclar1_siguiente">Siguiente</string>
+    <string name="fragment_reciclar1_unidades">unidades</string>
+    <string name="fragment_reciclar1_carton">Cartón</string>
+    <string name="fragment_reciclar1_vidrio">Vidrio</string>
+    <string name="fragment_reciclar1_plastico_pet">Plástico PET</string>
 </resources>
