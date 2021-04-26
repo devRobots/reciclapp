@@ -11,8 +11,8 @@
     <string name="fragment_login_cedula">Cedula</string>
     <string name="fragment_login_contrasenia">Contraseña</string>
     <string name="fragment_login_ingresar">Ingresar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings del Fragment Registro -->
     <string name="fragment_registro_nombre">Nombre Completo</string>
     <string name="fragment_registro_cedula">Cedula</string>
     <string name="fragment_registro_contrasenia">Contraseña</string>
@@ -27,6 +27,28 @@
     <string name="fragment_reciclar1_carton">Cartón</string>
     <string name="fragment_reciclar1_vidrio">Vidrio</string>
     <string name="fragment_reciclar1_plastico_pet">Plástico PET</string>
+
+    <!-- Strings del Home Activity -->
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Strings del Fragment Home -->
+    <string name="fragment_home_usuario_estadisticas">Estadísticas</string>
+    <string name="fragment_home_usuario_carton">Cartón</string>
+    <string name="fragment_home_usuario_plastico">Plástico</string>
+    <string name="fragment_home_usuario_vidrio">Vidrio</string>
+    <string name="fragment_home_usuario_default_int">0</string>
+    <string name="fragment_home_usuario_servicio_al_cliente">Servicio al cliente</string>
+    <string name="fragment_home_usuario_ayuda">Ayuda</string>
+    <string name="fragment_home_usuario_buzon_de_sugerencias">Búzon de sugerencias</string>
     <string name="fragment_reciclar2_titulo">DIA Y HORA DE RETIRO</string>
     <string name="fragment_reciclar2_fechaDeRetiro">Fecha de retiro</string>
     <string name="fragment_reciclar2_horaRetiro">Hora de retiro</string>

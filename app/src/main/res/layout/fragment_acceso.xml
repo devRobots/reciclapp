@@ -7,12 +7,11 @@
     android:orientation="vertical"
     tools:context=".AccesoFragment">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/primario"
-        android:orientation="vertical">
+        android:backgroundTint="@color/primario">
 
         <ImageView
             android:layout_width="match_parent"
@@ -20,7 +19,7 @@
             android:layout_margin="40dp"
             android:contentDescription="@string/fragment_acceso_content_logo"
             android:src="@drawable/logo_crq_blanco" />
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:layout_width="match_parent"

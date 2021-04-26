@@ -47,7 +47,7 @@
             android:selectAllOnFocus="true" />
 
         <Button
-            android:id="@+id/button35"
+            android:id="@+id/btnLoginIngresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/fragment_login_ingresar" />

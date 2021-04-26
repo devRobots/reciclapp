@@ -28,8 +28,8 @@
 		android:label="fragment_login"
 		tools:layout="@layout/fragment_login" >
 		<action
-			android:id="@+id/action_loginFragment_to_homeFragment"
-			app:destination="@id/homeFragment" />
+			android:id="@+id/action_loginFragment_to_mobile_navigation"
+			app:destination="@id/mobile_navigation" />
 	</fragment>
 	<fragment
 		android:id="@+id/registroFragment"
@@ -37,8 +37,8 @@
 		android:label="fragment_registro"
 		tools:layout="@layout/fragment_registro" >
 		<action
-			android:id="@+id/action_registroFragment_to_homeFragment"
-			app:destination="@id/homeFragment" />
+			android:id="@+id/action_registroFragment_to_mobile_navigation"
+			app:destination="@id/mobile_navigation" />
 	</fragment>
 	<fragment
 		android:id="@+id/homeFragment"
@@ -50,6 +50,7 @@
 		android:name="co.edu.uniquindio.reciclapp.Reciclar1Fragment"
 		android:label="fragment_reciclar1"
 		tools:layout="@layout/fragment_reciclar1" />
+	<include app:graph="@navigation/mobile_navigation" />
 	<fragment
 		android:id="@+id/reciclar2Fragment"
 		android:name="co.edu.uniquindio.reciclapp.reciclar2Fragment"

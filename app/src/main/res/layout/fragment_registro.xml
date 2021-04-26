@@ -76,9 +76,10 @@
 			android:selectAllOnFocus="true" />
 
 		<Button
-			android:id="@+id/button34"
+			android:id="@+id/btnRegistrarRegistro"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="@string/fragment_registro_registrar" />
+
 	</LinearLayout>
 </LinearLayout>
