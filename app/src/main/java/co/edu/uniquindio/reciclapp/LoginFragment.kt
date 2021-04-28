@@ -24,7 +24,6 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val btnIngresar = view.findViewById<Button>(R.id.btnLoginIngresar)
         btnIngresar?.setOnClickListener {
-            Toast.makeText(context, "Hola", Toast.LENGTH_SHORT).show()
             val intent = Intent(context, HomeActivity::class.java)
             startActivity(intent)
             activity?.finish()

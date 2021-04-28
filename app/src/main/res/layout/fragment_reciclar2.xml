@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".reciclar2Fragment">
+    tools:context=".Reciclar2Fragment">
 
     <TextView
         android:id="@+id/textView3"
@@ -31,26 +32,21 @@
                 android:text="@string/fragment_reciclar2_fechaDeRetiro" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/txtReciclar2FechaRecogida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="date" />
+                android:focusable="false"
+                android:inputType="date"
+                android:maxLines="1" />
 
-            <DatePicker
-                android:id="@+id/date_picker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:calendarViewShown="false"
-                android:spinnersShown="false" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,11 +60,14 @@
                 android:drawableLeft="@android:drawable/ic_menu_today"
                 android:text="@string/fragment_reciclar2_horaRetiro" />
 
-            <TimePicker
-                android:id="@+id/time_picker"
-                android:layout_weight="4"
+            <EditText
+                android:id="@+id/txtReciclar2HoraRecogida"
                 android:layout_width="match_parent"
-                android:layout_height="0dp" />
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                android:maxLines="1" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

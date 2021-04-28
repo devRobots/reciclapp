@@ -40,26 +40,6 @@
 			android:id="@+id/action_registroFragment_to_mobile_navigation"
 			app:destination="@id/mobile_navigation" />
 	</fragment>
-	<fragment
-		android:id="@+id/homeFragment"
-		android:name="co.edu.uniquindio.reciclapp.HomeFragment"
-		android:label="fragment_home"
-		tools:layout="@layout/fragment_home" />
-	<fragment
-		android:id="@+id/reciclar1Fragment"
-		android:name="co.edu.uniquindio.reciclapp.Reciclar1Fragment"
-		android:label="fragment_reciclar1"
-		tools:layout="@layout/fragment_reciclar1" />
 	<include app:graph="@navigation/mobile_navigation" />
-	<fragment
-		android:id="@+id/reciclar2Fragment"
-		android:name="co.edu.uniquindio.reciclapp.reciclar2Fragment"
-		android:label="fragment_reciclar2"
-		tools:layout="@layout/fragment_reciclar2" />
-	<fragment
-		android:id="@+id/reciclar3Fragment"
-		android:name="co.edu.uniquindio.reciclapp.Reciclar3Fragment"
-		android:label="fragment_reciclar3"
-		tools:layout="@layout/fragment_reciclar3" />
 
 </navigation>
