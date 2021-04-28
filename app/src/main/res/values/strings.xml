@@ -54,4 +54,12 @@
     <string name="fragment_reciclar2_horaRetiro">Hora de retiro</string>
     <string name="fragment_reciclar3_titulo">Confirmar el retiro</string>
     <string name="fragment_reciclar3_confirmar">Confirmar</string>
+    <string name="fragment_mi_perfil_titulo">Información personal</string>
+    <string name="fragment_mi_perfil_nombre">Nombre Completo</string>
+    <string name="fragment_mi_perfil_celular">Celular</string>
+    <string name="fragment_mi_perfil_correo">Correo</string>
+    <string name="fragment_mi_perfil_direccion">Dirección</string>
+    <string name="fragment_mi_perfil_guardar">Guardar</string>
+    <string name="fragment_mi_perfil_eliminar_cuenta">Eliminar Cuenta</string>
+    <string name="fragment_mi_perfil_cambiar_contrasenia">Cambiar contraseña</string>
 </resources>

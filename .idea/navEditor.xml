@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-288" />
-                            <option name="y" value="14" />
+                            <option name="x" value="12" />
+                            <option name="y" value="410" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -34,13 +34,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="homeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="loginFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-15" />
-                            <option name="y" value="-142" />
+                            <option name="x" value="256" />
+                            <option name="y" value="724" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -60,95 +72,14 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="313" />
-                            <option name="y" value="142" />
+                            <option name="x" value="500" />
+                            <option name="y" value="483" />
                           </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_loginFragment_to_homeFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
                   <entry key="reciclar1Fragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-340" />
-                            <option name="y" value="-318" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="reciclar2Fragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-154" />
-                            <option name="y" value="-481" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="reciclar3Fragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="86" />
-                            <option name="y" value="-582" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="registroFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-10" />
-                            <option name="y" value="207" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-<<<<<<< HEAD
-                            <entry key="action_registroFragment_to_mobile_navigation">
-=======
-                            <entry key="action_registroFragment_to_homeFragment">
->>>>>>> develop
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-<<<<<<< HEAD
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </LayoutPositions>
-          </value>
-        </entry>
-        <entry key="mobile_navigation.xml">
-          <value>
-            <LayoutPositions>
-              <option name="myPositions">
-                <map>
-                  <entry key="nav_gallery">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -160,29 +91,48 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_home">
+                  <entry key="reciclar2Fragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
+                            <option name="x" value="500" />
                             <option name="y" value="12" />
                           </Point>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_slideshow">
+                  <entry key="reciclar3Fragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
+                            <option name="x" value="744" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="registroFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
                             <option name="y" value="368" />
                           </Point>
                         </option>
-=======
->>>>>>> develop
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_registroFragment_to_mobile_navigation">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
