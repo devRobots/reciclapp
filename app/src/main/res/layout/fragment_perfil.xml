@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtMiPerfilTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/fragment_mi_perfil_titulo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/txtMiPerfilNombreCompleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fragment_mi_perfil_nombre" />
+
+            <EditText
+                android:id="@+id/txtMiPerfilNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:inputType="textPersonName"
+                android:labelFor="@id/txtMiPerfilNombreCompleto" />
+
+            <TextView
+                android:id="@+id/txtMiPerfilCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fragment_mi_perfil_celular" />
+
+            <EditText
+                android:id="@+id/txtMiPerfilCelularUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:inputType="phone"
+                android:labelFor="@id/txtMiPerfilCelular" />
+
+            <TextView
+                android:id="@+id/txtMiPerfilCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fragment_mi_perfil_correo" />
+
+            <EditText
+                android:id="@+id/txtMiPerfilCorreoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:inputType="textEmailAddress"
+                android:labelFor="@id/txtMiPerfilCorreo" />
+
+            <TextView
+                android:id="@+id/txtMiPerfilDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fragment_mi_perfil_direccion" />
+
+            <EditText
+                android:id="@+id/txtMiPerfilDireccionUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:inputType="textPostalAddress"
+                android:labelFor="@id/txtMiPerfilDireccion" />
+
+            <Button
+                android:id="@+id/btnMiPerfilCambiarContrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/secundario"
+                android:text="@string/fragment_mi_perfil_cambiar_contrasenia" />
+
+            <Button
+                android:id="@+id/btnMiPerfilGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_mi_perfil_guardar" />
+
+            <Button
+                android:id="@+id/btnMiPerfilCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="@string/fragment_mi_perfil_eliminar_cuenta" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

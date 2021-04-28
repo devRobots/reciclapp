@@ -13,7 +13,11 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="-9" />
+=======
+                            <option name="x" value="12" />
+>>>>>>> develop
                             <option name="y" value="410" />
                           </Point>
                         </option>
@@ -34,13 +38,30 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="homeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="loginFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="310" />
                             <option name="y" value="587" />
+=======
+                            <option name="x" value="256" />
+                            <option name="y" value="724" />
+>>>>>>> develop
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -60,8 +81,49 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="637" />
                             <option name="y" value="503" />
+=======
+                            <option name="x" value="500" />
+                            <option name="y" value="483" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="reciclar1Fragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="reciclar2Fragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="500" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="reciclar3Fragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="744" />
+                            <option name="y" value="12" />
+>>>>>>> develop
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -72,8 +134,13 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
+<<<<<<< HEAD
                             <option name="x" value="289" />
                             <option name="y" value="246" />
+=======
+                            <option name="x" value="256" />
+                            <option name="y" value="368" />
+>>>>>>> develop
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -85,6 +152,7 @@
                             </entry>
                           </map>
                         </option>
+<<<<<<< HEAD
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -149,6 +217,8 @@
                             <option name="y" value="230" />
                           </Point>
                         </option>
+=======
+>>>>>>> develop
                       </LayoutPositions>
                     </value>
                   </entry>
