@@ -7,7 +7,7 @@
 
 	<fragment
 		android:id="@+id/accesoFragment"
-		android:name="co.edu.uniquindio.reciclapp.AccesoFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.AccesoFragment"
 		android:label="fragment_acceso"
 		tools:layout="@layout/fragment_acceso" >
 		<action
@@ -24,7 +24,7 @@
 
 	<fragment
 		android:id="@+id/loginFragment"
-		android:name="co.edu.uniquindio.reciclapp.LoginFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.LoginFragment"
 		android:label="fragment_login"
 		tools:layout="@layout/fragment_login" >
 		<action
@@ -33,7 +33,7 @@
 	</fragment>
 	<fragment
 		android:id="@+id/registroFragment"
-		android:name="co.edu.uniquindio.reciclapp.RegistroFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RegistroFragment"
 		android:label="fragment_registro"
 		tools:layout="@layout/fragment_registro" >
 		<action

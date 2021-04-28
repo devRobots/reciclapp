@@ -9,12 +9,12 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/Theme.Reciclapp">
-		<activity android:name=".ReciclarActivity"></activity>
+		<activity android:name=".ui.activity.ReciclarActivity"></activity>
 		<activity
-			android:name=".HomeActivity"
+			android:name=".ui.activity.HomeActivity"
 			android:label="@string/title_activity_home"
 			android:theme="@style/Theme.Reciclapp.NoActionBar" />
-		<activity android:name=".MainActivity">
+		<activity android:name=".ui.activity.MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 

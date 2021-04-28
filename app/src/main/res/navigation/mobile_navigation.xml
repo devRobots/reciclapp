@@ -7,14 +7,14 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="co.edu.uniquindio.reciclapp.ui.home.HomeFragment"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="co.edu.uniquindio.reciclapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.PerfilFragment"
+        android:label="@string/menu_perfil"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment

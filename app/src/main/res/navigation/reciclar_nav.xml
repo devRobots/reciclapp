@@ -6,7 +6,7 @@
     app:startDestination="@id/reciclar1Fragment">
     <fragment
         android:id="@+id/reciclar1Fragment"
-        android:name="co.edu.uniquindio.reciclapp.Reciclar1Fragment"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.Reciclar1Fragment"
         android:label="fragment_reciclar1"
         tools:layout="@layout/fragment_reciclar1" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/reciclar2Fragment"
-        android:name="co.edu.uniquindio.reciclapp.Reciclar2Fragment"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.Reciclar2Fragment"
         android:label="fragment_reciclar2"
         tools:layout="@layout/fragment_reciclar2" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/reciclar3Fragment"
-        android:name="co.edu.uniquindio.reciclapp.Reciclar3Fragment"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.Reciclar3Fragment"
         android:label="fragment_reciclar3"
         tools:layout="@layout/fragment_reciclar3" />
 </navigation>

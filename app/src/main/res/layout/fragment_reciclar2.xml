@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".Reciclar2Fragment">
+    tools:context=".ui.fragment.Reciclar2Fragment">
 
     <TextView
         android:id="@+id/textView3"
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@android:drawable/ic_menu_my_calendar"
                 android:gravity="left|center_vertical"
-                android:text="@string/fragment_reciclar2_fechaDeRetiro" />
+                android:text="@string/fragment_reciclar2_fecha_retiro" />
 
             <EditText
                 android:id="@+id/txtReciclar2FechaRecogida"
@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@android:drawable/ic_menu_today"
-                android:text="@string/fragment_reciclar2_horaRetiro" />
+                android:text="@string/fragment_reciclar2_hora_retiro" />
 
             <EditText
                 android:id="@+id/txtReciclar2HoraRecogida"
@@ -70,5 +70,12 @@
                 android:maxLines="1" />
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_reciclar2_siguiente" />
 </LinearLayout>
