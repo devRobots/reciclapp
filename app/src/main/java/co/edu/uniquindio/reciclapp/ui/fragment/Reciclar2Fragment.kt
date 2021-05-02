@@ -7,7 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
+import androidx.navigation.fragment.findNavController
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.ui.dialog.SelectorFechaDialog
 import co.edu.uniquindio.reciclapp.ui.dialog.SelectorHoraDialog
@@ -34,7 +36,7 @@ class Reciclar2Fragment : Fragment() {
         txtFechaRecogida = view.findViewById(R.id.txtReciclar2FechaRecogida)
         txtFechaRecogida.setOnClickListener {
             val newFragment = SelectorFechaDialog.newInstance(DatePickerDialog.OnDateSetListener { _, year, month, day ->
-                val selectedDate = "$year/${(month+1)}/$day"
+                val selectedDate = "$year/${validarFechaHora(month + 1)}/${validarFechaHora(day)}"
                 txtFechaRecogida.setText(selectedDate)
             })
             newFragment.show(childFragmentManager, "datePicker")
@@ -43,10 +45,15 @@ class Reciclar2Fragment : Fragment() {
         txtHoraRecogida = view.findViewById(R.id.txtReciclar2HoraRecogida)
         txtHoraRecogida.setOnClickListener {
             val newFragment = SelectorHoraDialog.newInstance(TimePickerDialog.OnTimeSetListener { _, hour, minute ->
-                val selectedHour = "$hour:$minute"
+                val selectedHour = "${validarFechaHora(hour)}:${validarFechaHora(minute)}"
                 txtHoraRecogida.setText(selectedHour)
             })
             newFragment.show(childFragmentManager, "timePicker")
         }
+
+        val btnSiguiente = view.findViewById<Button>(R.id.btnReciclar2Siguiente)
+        btnSiguiente.setOnClickListener { findNavController().navigate(R.id.reciclar3Fragment) }
     }
+
+    fun validarFechaHora(value: Int) : String = if (value < 10) "0$value" else "$value"
 }
