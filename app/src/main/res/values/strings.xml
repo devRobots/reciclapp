@@ -73,5 +73,6 @@
     <string name="fragment_perfil_guardar">Guardar</string>
     <string name="fragment_perfil_eliminar_cuenta">Eliminar Cuenta</string>
     <string name="fragment_perfil_cambiar_contrasenia">Cambiar contraseña</string>
+
     <string name="list_element_cancelar">Cancelar</string>
 </resources>

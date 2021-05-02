@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="co.edu.uniquindio.reciclapp.ui.slideshow.SlideshowFragment"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.RetirosFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_retiros" />
 </navigation>
