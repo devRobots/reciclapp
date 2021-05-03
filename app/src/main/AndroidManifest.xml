@@ -9,15 +9,19 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/Theme.Reciclapp">
-		<activity android:name=".ui.activity.ReciclarActivity"></activity>
+		<activity
+			android:name=".ui.activity.ReciclarActivity"
+			android:screenOrientation="portrait" />
 		<activity
 			android:name=".ui.activity.HomeActivity"
 			android:label="@string/title_activity_home"
-			android:theme="@style/Theme.Reciclapp.NoActionBar" />
-		<activity android:name=".ui.activity.MainActivity">
+			android:theme="@style/Theme.Reciclapp.NoActionBar"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".ui.activity.MainActivity"
+			android:screenOrientation="portrait">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
-
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>

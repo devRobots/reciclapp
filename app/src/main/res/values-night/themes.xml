@@ -1,14 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 	<!-- Base application theme. -->
-	<style name="Theme.Reciclapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+	<style name="Theme.Reciclapp" parent="Theme.MaterialComponents.Light.NoActionBar">
 		<!-- Primary brand color. -->
 		<item name="colorPrimary">@color/primario</item>
 		<item name="colorPrimaryVariant">@color/primario_variante</item>
-		<item name="colorOnPrimary">@color/white</item>
+		<item name="colorOnPrimary">@color/gray</item>
 		<!-- Secondary brand color. -->
 		<item name="colorSecondary">@color/secundario</item>
 		<item name="colorSecondaryVariant">@color/secundario_variante</item>
-		<item name="colorOnSecondary">@color/white</item>
+		<item name="colorOnSecondary">@color/gray</item>
 		<!-- Status bar color. -->
 		<item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 		<!-- Customize your theme here. -->
