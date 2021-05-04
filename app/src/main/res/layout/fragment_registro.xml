@@ -37,7 +37,7 @@
 			android:selectAllOnFocus="true" />
 
 		<EditText
-			android:id="@+id/username"
+			android:id="@+id/edtLoginCedula"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
@@ -46,7 +46,7 @@
 			android:selectAllOnFocus="true" />
 
 		<EditText
-			android:id="@+id/password"
+			android:id="@+id/edtLoginContrasenia"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""

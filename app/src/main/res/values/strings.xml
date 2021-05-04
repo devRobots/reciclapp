@@ -11,6 +11,7 @@
 	<string name="fragment_login_cedula">Cedula</string>
 	<string name="fragment_login_contrasenia">Contraseña</string>
 	<string name="fragment_login_ingresar">Ingresar</string>
+	<string name="fragment_login_cuenta_desconocida">La cedula y/o contraseña no coinciden con nuestros registros.</string>
 
 	<!-- Strings del Fragment Registro -->
 	<string name="fragment_registro_nombre">Nombre Completo</string>

@@ -18,6 +18,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Reciclapp.NoActionBar" />
         <activity
+            android:name=".ui.activity.AdminHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Reciclapp.NoActionBar" />
+        <activity
             android:name=".ui.activity.MainActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
