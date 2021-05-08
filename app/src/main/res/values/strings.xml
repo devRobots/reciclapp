@@ -1,11 +1,11 @@
 <resources>
-	<string name="app_name">Reciclapp</string>
+    <string name="app_name">Reciclapp</string>
 
-	<!-- Strings del Fragment Acceso -->
-	<string name="fragment_acceso_ingresar">Ingresar</string>
-	<string name="fragment_acceso_registro">Registro</string>
-	<string name="fragment_acceso_quienes_somos">¿Quiénes somos?</string>
-	<string name="fragment_acceso_content_logo">Logo de la CRQ</string>
+    <!-- Strings del Fragment Acceso -->
+    <string name="fragment_acceso_ingresar">Ingresar</string>
+    <string name="fragment_acceso_registro">Registro</string>
+    <string name="fragment_acceso_quienes_somos">¿Quiénes somos?</string>
+    <string name="fragment_acceso_content_logo">Logo de la CRQ</string>
 
 	<!-- Strings del Fragment Login -->
 	<string name="fragment_login_cedula">Cedula</string>
@@ -13,27 +13,27 @@
 	<string name="fragment_login_ingresar">Ingresar</string>
 	<string name="fragment_login_cuenta_desconocida">La cedula y/o contraseña no coinciden con nuestros registros.</string>
 
-	<!-- Strings del Fragment Registro -->
-	<string name="fragment_registro_nombre">Nombre Completo</string>
-	<string name="fragment_registro_cedula">Cedula</string>
-	<string name="fragment_registro_contrasenia">Contraseña</string>
-	<string name="fragment_registro_correo">Correo Electronico</string>
-	<string name="fragment_registro_direccion">Direccion</string>
-	<string name="fragment_registro_registrar">Registrar</string>
+    <!-- Strings del Fragment Registro -->
+    <string name="fragment_registro_nombre">Nombre Completo</string>
+    <string name="fragment_registro_cedula">Cedula</string>
+    <string name="fragment_registro_contrasenia">Contraseña</string>
+    <string name="fragment_registro_correo">Correo Electronico</string>
+    <string name="fragment_registro_direccion">Direccion</string>
+    <string name="fragment_registro_registrar">Registrar</string>
 
-	<!-- Strings del Home Activity -->
-	<string name="title_activity_home">HomeActivity</string>
-	<string name="navigation_drawer_open">Open navigation drawer</string>
-	<string name="navigation_drawer_close">Close navigation drawer</string>
-	<string name="action_settings">Settings</string>
+    <!-- Strings del Home Activity -->
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
 
-	<!-- Strings del Menu Nav -->
-	<string name="menu_home">Inicio</string>
-	<string name="menu_perfil">Perfil</string>
-	<string name="menu_slideshow">Retiros</string>
-	<string name="nav_header_title">Android Studio</string>
-	<string name="nav_header_subtitle">android.studio@android.com</string>
-	<string name="nav_header_desc">Navigation header</string>
+    <!-- Strings del Menu Nav -->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_slideshow">Retiros</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 
     <!-- Strings del Fragment Home -->
     <string name="fragment_home_usuario_estadisticas">Estadísticas</string>
@@ -45,27 +45,27 @@
     <string name="fragment_home_usuario_ayuda">Ayuda</string>
     <string name="fragment_home_usuario_buzon_de_sugerencias">Búzon de sugerencias</string>
 
-	<!-- Strings del Fragment Reciclar 1 -->
-	<string name="fragment_reciclar1_titulo">CUENTA Y RECICLA</string>
-	<string name="fragment_reciclar1_subtitulo">tu material reciclable</string>
-	<string name="fragment_reciclar1_checkboxText">¿ Tienes papel para reciclar ?</string>
-	<string name="fragment_reciclar1_siguiente">Siguiente</string>
-	<string name="fragment_reciclar1_unidades">unidades</string>
-	<string name="fragment_reciclar1_carton">Cartón</string>
-	<string name="fragment_reciclar1_vidrio">Vidrio</string>
-	<string name="fragment_reciclar1_plastico_pet">Plástico PET</string>
+    <!-- Strings del Fragment Reciclar 1 -->
+    <string name="fragment_reciclar1_titulo">CUENTA Y RECICLA</string>
+    <string name="fragment_reciclar1_subtitulo">tu material reciclable</string>
+    <string name="fragment_reciclar1_checkboxText">¿ Tienes papel para reciclar ?</string>
+    <string name="fragment_reciclar1_siguiente">Siguiente</string>
+    <string name="fragment_reciclar1_unidades">unidades</string>
+    <string name="fragment_reciclar1_carton">Cartón</string>
+    <string name="fragment_reciclar1_vidrio">Vidrio</string>
+    <string name="fragment_reciclar1_plastico_pet">Plástico PET</string>
 
-	<!-- Strings del Fragment Reciclar 2 -->
+    <!-- Strings del Fragment Reciclar 2 -->
     <string name="fragment_reciclar2_titulo">DIA Y HORA DE RETIRO</string>
     <string name="fragment_reciclar2_fecha_retiro">Fecha de retiro</string>
     <string name="fragment_reciclar2_hora_retiro">Hora de retiro</string>
-	<string name="fragment_reciclar2_siguiente">Siguiente</string>
+    <string name="fragment_reciclar2_siguiente">Siguiente</string>
 
-	<!-- Strings del Fragment Reciclar 3 -->
-	<string name="fragment_reciclar3_titulo">Confirmar el retiro</string>
-	<string name="fragment_reciclar3_confirmar">Confirmar</string>
+    <!-- Strings del Fragment Reciclar 3 -->
+    <string name="fragment_reciclar3_titulo">Confirmar el retiro</string>
+    <string name="fragment_reciclar3_confirmar">Confirmar</string>
 
-	<!-- Strings del Fragment Perfil -->
+    <!-- Strings del Fragment Perfil -->
     <string name="fragment_perfil_titulo">Información personal</string>
     <string name="fragment_perfil_nombre">Nombre Completo</string>
     <string name="fragment_perfil_celular">Celular</string>
@@ -76,4 +76,20 @@
     <string name="fragment_perfil_cambiar_contrasenia">Cambiar contraseña</string>
 
     <string name="list_element_cancelar">Cancelar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_recolector_nombre">Nombre</string>
+    <string name="fragment_recolector_cedula">Cédula</string>
+    <string name="fragment_recolecto_celular">Celular</string>
+    <string name="fragment_recolector_correo">Correo</string>
+    <string name="fragment_recolector_direccion">Direccion</string>
+    <string name="fragment_recolector_guardar">Guardar</string>
+    <string name="fragment_recolector_titulo">Información personal</string>
+    <string name="fragment_recolector_eliminar">Eliminar</string>
+    <string name="fragment_comprador_titulo">Información personal</string>
+    <string name="fragment_comprador_Nit">NIT</string>
+    <string name="fragment_comprador_nombre">Nombre</string>
+    <string name="fragment_comprador_correo">Correo</string>
+    <string name="fragment_comprador_celular">Celular</string>
+    <string name="fragment_comprador_guardar">Guardar</string>
 </resources>

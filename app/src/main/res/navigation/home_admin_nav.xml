@@ -19,4 +19,14 @@
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RetirosFragment"
 		android:label="@string/menu_slideshow"
 		tools:layout="@layout/fragment_retiros" />
+	<fragment
+		android:id="@+id/recolectorFragment2"
+		android:name="co.edu.uniquindio.reciclapp.RecolectorFragment"
+		android:label="fragment_recolector"
+		tools:layout="@layout/fragment_recolector" />
+	<fragment
+		android:id="@+id/compradorFragment"
+		android:name="co.edu.uniquindio.reciclapp.CompradorFragment"
+		android:label="fragment_comprador"
+		tools:layout="@layout/fragment_comprador" />
 </navigation>
