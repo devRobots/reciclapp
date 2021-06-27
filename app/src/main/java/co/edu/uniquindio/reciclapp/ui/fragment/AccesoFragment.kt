@@ -30,7 +30,9 @@ class AccesoFragment : Fragment() {
         btnAccesoRegistrar.setOnClickListener{ findNavController().navigate(R.id.registroFragment) }
 
         val btnAccesoQuienesSomos = view.findViewById<Button>(R.id.btnAccesoQuienesSomos)
-        btnAccesoQuienesSomos.setOnClickListener{ findNavController().navigate(R.id.reciclar2Fragment) }
+        btnAccesoQuienesSomos.setOnClickListener{
+            //findNavController().navigate(R.id.reciclar2Fragment)
+        }
     }
 
 }

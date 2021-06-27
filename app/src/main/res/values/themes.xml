@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Reciclapp.NoActionBar">
+    <style name="Theme.Reciclapp.NoActionBar" parent="Theme.Reciclapp">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

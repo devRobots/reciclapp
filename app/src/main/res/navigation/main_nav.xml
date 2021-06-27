@@ -28,8 +28,8 @@
 		android:label="fragment_login"
 		tools:layout="@layout/fragment_login" >
 		<action
-			android:id="@+id/action_loginFragment_to_mobile_navigation"
-			app:destination="@id/mobile_navigation" />
+			android:id="@+id/action_loginFragment_to_home_user_nav"
+			app:destination="@id/home_user_nav" />
 	</fragment>
 	<fragment
 		android:id="@+id/registroFragment"
@@ -37,8 +37,8 @@
 		android:label="fragment_registro"
 		tools:layout="@layout/fragment_registro" >
 		<action
-			android:id="@+id/action_registroFragment_to_mobile_navigation"
-			app:destination="@id/mobile_navigation" />
+			android:id="@+id/action_registroFragment_to_home_user_nav"
+			app:destination="@id/home_user_nav" />
 	</fragment>
 	<include app:graph="@navigation/home_user_nav" />
 

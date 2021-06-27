@@ -19,6 +19,7 @@
             android:theme="@style/Theme.Reciclapp.NoActionBar" />
         <activity
             android:name=".ui.activity.AdminHomeActivity"
+            android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Reciclapp.NoActionBar" />
         <activity

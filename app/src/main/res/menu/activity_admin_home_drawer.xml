@@ -15,6 +15,14 @@
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_round_pie_chart_24"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_reportes" />
+        <item
+            android:id="@+id/nav_recolector"
+            android:icon="@drawable/ic_baseline_hiking_24"
+            android:title="@string/menu_recolectores" />
+        <item
+            android:id="@+id/nav_comprador"
+            android:icon="@drawable/ic_baseline_hail_24"
+            android:title="@string/menu_compradores" />
     </group>
 </menu>

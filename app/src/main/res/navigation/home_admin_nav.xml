@@ -6,7 +6,7 @@
 	app:startDestination="@id/nav_home_admin">
 	<fragment
 		android:id="@+id/nav_home_admin"
-		android:name="co.edu.uniquindio.reciclapp.ui.fragment.HomeFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.AdminHomeFragment"
 		android:label="@string/menu_home"
 		tools:layout="@layout/fragment_admin_home" />
 	<fragment
@@ -17,16 +17,16 @@
 	<fragment
 		android:id="@+id/nav_slideshow"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RetirosFragment"
-		android:label="@string/menu_slideshow"
+		android:label="@string/menu_retiros"
 		tools:layout="@layout/fragment_retiros" />
 	<fragment
-		android:id="@+id/recolectorFragment2"
-		android:name="co.edu.uniquindio.reciclapp.RecolectorFragment"
-		android:label="fragment_recolector"
+		android:id="@+id/nav_recolector"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RecolectorFragment"
+		android:label="@string/menu_recolectores"
 		tools:layout="@layout/fragment_recolector" />
 	<fragment
-		android:id="@+id/compradorFragment"
-		android:name="co.edu.uniquindio.reciclapp.CompradorFragment"
-		android:label="fragment_comprador"
+		android:id="@+id/nav_comprador"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.CompradorFragment"
+		android:label="@string/menu_compradores"
 		tools:layout="@layout/fragment_comprador" />
 </navigation>
