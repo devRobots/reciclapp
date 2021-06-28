@@ -10,16 +10,6 @@
 		android:label="@string/menu_home"
 		tools:layout="@layout/fragment_admin_home" />
 	<fragment
-		android:id="@+id/nav_gallery"
-		android:name="co.edu.uniquindio.reciclapp.ui.fragment.PerfilFragment"
-		android:label="@string/menu_perfil"
-		tools:layout="@layout/fragment_perfil" />
-	<fragment
-		android:id="@+id/nav_slideshow"
-		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RetirosFragment"
-		android:label="@string/menu_retiros"
-		tools:layout="@layout/fragment_retiros" />
-	<fragment
 		android:id="@+id/nav_recolector"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RecolectorFragment"
 		android:label="@string/menu_recolectores"
@@ -29,4 +19,24 @@
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.CompradorFragment"
 		android:label="@string/menu_compradores"
 		tools:layout="@layout/fragment_comprador" />
+	<fragment
+		android:id="@+id/estadisticasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.EstadisticasFragment"
+		android:label="fragment_estadisticas"
+		tools:layout="@layout/fragment_estadisticas" />
+	<fragment
+		android:id="@+id/ventasFragment"
+		android:name="co.edu.uniquindio.reciclapp.VentasFragment"
+		android:label="fragment_ventas"
+		tools:layout="@layout/fragment_ventas" />
+	<fragment
+		android:id="@+id/citasFragment"
+		android:name="co.edu.uniquindio.reciclapp.CitasFragment"
+		android:label="fragment_citas"
+		tools:layout="@layout/fragment_citas" />
+	<fragment
+		android:id="@+id/rutasFragment"
+		android:name="co.edu.uniquindio.reciclapp.RutasFragment"
+		android:label="fragment_rutas"
+		tools:layout="@layout/fragment_rutas" />
 </navigation>

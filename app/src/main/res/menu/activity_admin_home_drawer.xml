@@ -8,21 +8,50 @@
             android:id="@+id/nav_home_admin"
             android:icon="@drawable/ic_baseline_home_24"
             android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_baseline_person_24"
-            android:title="@string/menu_perfil" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_round_pie_chart_24"
-            android:title="@string/menu_reportes" />
-        <item
-            android:id="@+id/nav_recolector"
-            android:icon="@drawable/ic_baseline_hiking_24"
-            android:title="@string/menu_recolectores" />
-        <item
-            android:id="@+id/nav_comprador"
-            android:icon="@drawable/ic_baseline_hail_24"
-            android:title="@string/menu_compradores" />
+
+        <item android:title="Actividades">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/citasFragment"
+                        android:icon="@drawable/ic_baseline_book_24"
+                        android:title="@string/menu_citas" />
+                    <item
+                        android:id="@+id/rutasFragment"
+                        android:icon="@drawable/ic_baseline_pin_drop_24"
+                        android:title="@string/menu_rutas" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Financiero">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/estadisticasFragment"
+                        android:icon="@drawable/ic_round_pie_chart_24"
+                        android:title="@string/menu_estadisticas" />
+                    <item
+                        android:id="@+id/ventasFragment"
+                        android:icon="@drawable/ic_baseline_attach_money_24"
+                        android:title="@string/menu_ventas" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Usuarios">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_recolector"
+                        android:icon="@drawable/ic_baseline_hiking_24"
+                        android:title="@string/menu_recolectores" />
+                    <item
+                        android:id="@+id/nav_comprador"
+                        android:icon="@drawable/ic_baseline_hail_24"
+                        android:title="@string/menu_compradores" />
+                </group>
+            </menu>
+        </item>
     </group>
 </menu>

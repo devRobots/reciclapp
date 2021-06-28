@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:layout_margin="20dp"
-                android:src="@drawable/banner_usuarios" />
+                android:src="@drawable/logo_crq_verde" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -167,7 +167,7 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/btnAdminHomeVerMas"
                         style="@style/Widget.AppCompat.Button.Borderless"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="@string/fragment_home_usuario_gestion"
+                    android:text="@string/fragment_home_usuario_info"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <View
@@ -210,7 +210,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -219,21 +220,33 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
-                        app:srcCompat="@drawable/ic_baseline_group_24"
+                        app:srcCompat="@drawable/ic_baseline_hiking_24"
                         app:tint="@color/secundario_variante" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="24dp"
                         android:layout_margin="16dp"
+                        android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:text="@string/fragment_home_usuario_recolectores"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="45"
+                        android:textAlignment="textEnd"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="56dp">
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -249,14 +262,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="24dp"
                         android:layout_margin="16dp"
+                        android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:text="@string/fragment_home_usuario_citas"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="12"
+                        android:textAlignment="textEnd"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="56dp">
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical">
 
                     <ImageView
                         android:layout_width="40dp"
@@ -265,16 +290,27 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="8dp"
-                        app:srcCompat="@drawable/ic_baseline_pin_drop_24"
+                        app:srcCompat="@drawable/ic_baseline_hail_24"
                         app:tint="@color/secundario_variante" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="24dp"
                         android:layout_margin="16dp"
+                        android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="@string/fragment_home_usuario_rutas"
+                        android:text="@string/fragment_home_usuario_compradores"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="10"
+                        android:textAlignment="textEnd"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -3,7 +3,7 @@ package co.edu.uniquindio.reciclapp.ui.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import android.widget.ImageView
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -27,7 +27,11 @@ class AdminHomeActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.admin_drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_admin_view)
         val navController = findNavController(R.id.nav_host_admin_fragment)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_home_admin), drawerLayout)
+        appBarConfiguration = AppBarConfiguration(
+            setOf(R.id.nav_home_admin, R.id.nav_slideshow, R.id.nav_recolector, R.id.nav_comprador,
+                R.id.ventasFragment, R.id.estadisticasFragment, R.id.citasFragment,
+                R.id.rutasFragment), drawerLayout
+        )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

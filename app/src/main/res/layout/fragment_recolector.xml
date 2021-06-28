@@ -11,7 +11,7 @@
     android:baselineAligned="false"
     android:foregroundTint="#FFFFFF"
     android:orientation="vertical"
-    tools:context=".RecolectorFragment">
+    tools:context=".ui.fragment.RecolectorFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
