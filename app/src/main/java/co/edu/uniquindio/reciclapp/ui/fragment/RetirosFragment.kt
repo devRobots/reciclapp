@@ -44,9 +44,9 @@ class RetirosFragment : Fragment() {
                 TabLayoutMediator.TabConfigurationStrategy{ tab, position ->
                     when(position){
                         0 -> {
-                            tab.text = "Lista Retiros" }
+                            tab.text = "Pendientes" }
                         1 -> {
-                            tab.text = "Lista Pendientes??"
+                            tab.text = "Finalizados"
                         }
                     }
                 })

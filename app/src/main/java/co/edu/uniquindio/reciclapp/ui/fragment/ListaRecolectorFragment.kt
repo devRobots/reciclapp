@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
+import co.edu.uniquindio.reciclapp.adapter.ListRecolectorAdapter
 import co.edu.uniquindio.reciclapp.adapter.ListRetiroAdapter
+import co.edu.uniquindio.reciclapp.model.Recolector
 import co.edu.uniquindio.reciclapp.model.Retiro
 import java.util.*
 import kotlin.collections.ArrayList
@@ -16,10 +18,10 @@ import kotlin.collections.ArrayList
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ListaFragment.newInstance] factory method to
+ * Use the [ListaRecolectorFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ListaFragment : Fragment() {
+class ListaRecolectorFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
 
@@ -42,11 +44,11 @@ class ListaFragment : Fragment() {
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
-        val elements = ArrayList<Retiro>()
-        elements.add( Retiro( Date(),"12:00",45))
-        elements.add( Retiro( Date(),"14:00",445))
-        elements.add( Retiro( Date(),"13:00",3))
-        recyclerView.adapter = ListRetiroAdapter(elements, activity)
+        val elements = ArrayList<Recolector>()
+        elements.add( Recolector(1, "Camilo Quiceno", 3196681290, "ccquicenol@uqvirtual.edu.co", ArrayList() ))
+        elements.add( Recolector(2,"Samara Rincon", 3392039, "ssrinconm@uqvirtual.edu.co", ArrayList()))
+        elements.add( Recolector(3, "Yesid Rosas", 31392193, "ysrosast@uqvirtual.edu.co", ArrayList()))
+        recyclerView.adapter = ListRecolectorAdapter(elements, activity)
     }
 
 }

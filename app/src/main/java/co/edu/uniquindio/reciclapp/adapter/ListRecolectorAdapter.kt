@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.model.Retiro
+import co.edu.uniquindio.reciclapp.model.Recolector
 
-class ListRetiroAdapter(var itemList: List<Retiro>, context: Context?) : RecyclerView.Adapter<ListRetiroAdapter.ViewHolder>() {
+class ListRecolectorAdapter(var itemList: List<Recolector>, context: Context?) : RecyclerView.Adapter<ListRecolectorAdapter.ViewHolder>() {
     private val mInflater: LayoutInflater = LayoutInflater.from(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -22,14 +22,17 @@ class ListRetiroAdapter(var itemList: List<Retiro>, context: Context?) : Recycle
     }
 
     inner class ViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private var fecha: TextView = itemView.findViewById(R.id.txtListFecha)
-        private var hora: TextView = itemView.findViewById(R.id.txtListElementHora)
-        private var material: TextView = itemView.findViewById(R.id.txtListElementTotal)
+        private var id: TextView = itemView.findViewById(R.id.txtListRecolectorId)
+        private var nombre: TextView = itemView.findViewById(R.id.txtListRecolectorNombre)
+        private var telefono: TextView = itemView.findViewById(R.id.txtListRecolectorTelefono)
+        private var correo: TextView = itemView.findViewById(R.id.txtListRecolectorCorreo)
 
-        fun binData(item: Retiro) {
-            fecha.text = item.fecha.toString()
-            hora.text = item.hora
-            material.text = item.totalMaterial.toString()
+        fun binData(item: Recolector) {
+            id.text = item.idRecolector.toString()
+            nombre.text = item.nombre
+            telefono.text = item.telefono.toString()
+            correo.text = item.correo
+
         }
     }
 

@@ -26,21 +26,27 @@
                 android:padding="2dp">
 
                 <TextView
-                    android:id="@+id/txtListFecha"
+                    android:id="@+id/txtListRecolectorId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/txtListElementHora"
+                    android:id="@+id/txtListRecolectorNombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:text="TextView" />
 
                 <TextView
-                    android:id="@+id/txtListElementTotal"
+                    android:id="@+id/txtListRecolectorTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtListRecolectorCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
