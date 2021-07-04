@@ -47,7 +47,7 @@
                         android:icon="@drawable/ic_baseline_hiking_24"
                         android:title="@string/menu_recolectores" />
                     <item
-                        android:id="@+id/nav_comprador"
+                        android:id="@+id/listaCompradorFragment"
                         android:icon="@drawable/ic_baseline_hail_24"
                         android:title="@string/menu_compradores" />
                 </group>

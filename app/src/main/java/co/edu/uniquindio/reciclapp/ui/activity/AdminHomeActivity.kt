@@ -29,7 +29,7 @@ class AdminHomeActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_admin_fragment)
         appBarConfiguration = AppBarConfiguration(
             setOf(R.id.nav_home_admin, R.id.nav_slideshow, R.id.listaRecolectorFragment2,
-                R.id.nav_comprador, R.id.ventasFragment, R.id.estadisticasFragment,
+                R.id.listaCompradorFragment, R.id.ventasFragment, R.id.estadisticasFragment,
                 R.id.citasFragment, R.id.rutasFragment), drawerLayout
         )
         navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {

@@ -111,4 +111,6 @@
 	<!-- Otros -->
 	<string name="list_element_cancelar">Cancelar</string>
 	<string name="hello_blank_fragment">Proximamente...</string>
+    <string name="fragment_lista_recolector">Recolectores</string>
+	<string name="fragment_lista_comprador">Compradores</string>
 </resources>
