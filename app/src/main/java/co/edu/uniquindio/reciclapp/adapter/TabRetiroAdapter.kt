@@ -10,13 +10,7 @@ class TabRetiroAdapter(fa: FragmentActivity) :  FragmentStateAdapter(fa) {
     override fun getItemCount(): Int = 2
 
     override fun createFragment(position: Int): Fragment {
-        return when(position){
-            0 -> { ListaFragment() }
-            1 -> { ListaFragment()
-            }
-            else -> { ListaFragment()
-            }
-        }
+        return ListaFragment()
     }
 
 }

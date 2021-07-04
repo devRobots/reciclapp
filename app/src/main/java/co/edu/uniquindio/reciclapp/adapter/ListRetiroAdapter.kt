@@ -13,12 +13,16 @@ class ListRetiroAdapter(var itemList: List<Retiro>, context: Context?) : Recycle
     private val mInflater: LayoutInflater = LayoutInflater.from(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = mInflater.inflate(R.layout.list_element, null)
+        val view = mInflater.inflate(R.layout.list_element, parent, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binData(itemList[position])
+
+        holder.itemView.setOnClickListener {
+
+        }
     }
 
     inner class ViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {

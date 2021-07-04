@@ -3,7 +3,7 @@ package co.edu.uniquindio.reciclapp.ui.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.widget.ImageView
+import android.view.MenuItem
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -32,6 +32,12 @@ class AdminHomeActivity : AppCompatActivity() {
                 R.id.ventasFragment, R.id.estadisticasFragment, R.id.citasFragment,
                 R.id.rutasFragment), drawerLayout
         )
+        navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {
+            val intent = Intent(baseContext, MainActivity::class.java)
+            startActivity(intent)
+            finishActivity(0)
+            true
+        }
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

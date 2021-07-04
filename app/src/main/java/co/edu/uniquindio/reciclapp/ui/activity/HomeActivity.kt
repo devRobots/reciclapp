@@ -34,7 +34,14 @@ class HomeActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_home), drawerLayout)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_home, R.id.nav_slideshow),
+            drawerLayout)
+        navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {
+            val intent = Intent(baseContext, MainActivity::class.java)
+            startActivity(intent)
+            finishActivity(0)
+            true
+        }
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
