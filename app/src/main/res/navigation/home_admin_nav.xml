@@ -6,9 +6,9 @@
 	app:startDestination="@id/nav_home_admin">
 	<fragment
 		android:id="@+id/nav_home_admin"
-		android:name="co.edu.uniquindio.reciclapp.ui.fragment.AdminHomeFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.HomeAdminFragment"
 		android:label="@string/menu_home"
-		tools:layout="@layout/fragment_admin_home" />
+		tools:layout="@layout/fragment_home_admin" />
 	<fragment
 		android:id="@+id/nav_recolector"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RecolectorFragment"
@@ -26,21 +26,21 @@
 		tools:layout="@layout/fragment_estadisticas" />
 	<fragment
 		android:id="@+id/ventasFragment"
-		android:name="co.edu.uniquindio.reciclapp.VentasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.VentaFragment"
 		android:label="fragment_ventas"
-		tools:layout="@layout/fragment_ventas" />
+		tools:layout="@layout/fragment_venta" />
 	<fragment
 		android:id="@+id/citasFragment"
-		android:name="co.edu.uniquindio.reciclapp.CitasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.CitaFragment"
 		android:label="fragment_citas"
-		tools:layout="@layout/fragment_citas" />
+		tools:layout="@layout/fragment_cita" />
 	<fragment
 		android:id="@+id/rutasFragment"
-		android:name="co.edu.uniquindio.reciclapp.RutasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RutaFragment"
 		android:label="fragment_rutas"
-		tools:layout="@layout/fragment_rutas" />
+		tools:layout="@layout/fragment_ruta" />
 	<fragment
 		android:id="@+id/listaRecolectorFragment2"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaRecolectorFragment"
-		android:label="ListaRecolectorFragment" />
+		android:label="Recolectores" />
 </navigation>

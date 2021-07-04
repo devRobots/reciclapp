@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import co.edu.uniquindio.reciclapp.R
 
-class AdminHomeFragment : Fragment() {
+class HomeAdminFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_admin_home, container, false)
+        return inflater.inflate(R.layout.fragment_home_admin, container, false)
     }
 
 }
