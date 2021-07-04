@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
@@ -48,7 +50,8 @@ class ListaRecolectorFragment : Fragment() {
         elements.add( Recolector(1, "Camilo Quiceno", 3196681290, "ccquicenol@uqvirtual.edu.co", ArrayList() ))
         elements.add( Recolector(2,"Samara Rincon", 3392039, "ssrinconm@uqvirtual.edu.co", ArrayList()))
         elements.add( Recolector(3, "Yesid Rosas", 31392193, "ysrosast@uqvirtual.edu.co", ArrayList()))
-        recyclerView.adapter = ListRecolectorAdapter(elements, activity)
+        recyclerView.adapter = ListRecolectorAdapter(elements, activity, View.OnClickListener {
+            findNavController().navigate(R.id.nav_recolector)
+        })
     }
-
 }

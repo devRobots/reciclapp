@@ -43,7 +43,7 @@
             <menu>
                 <group android:checkableBehavior="single">
                     <item
-                        android:id="@+id/nav_recolector"
+                        android:id="@+id/listaRecolectorFragment2"
                         android:icon="@drawable/ic_baseline_hiking_24"
                         android:title="@string/menu_recolectores" />
                     <item

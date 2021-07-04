@@ -39,4 +39,8 @@
 		android:name="co.edu.uniquindio.reciclapp.RutasFragment"
 		android:label="fragment_rutas"
 		tools:layout="@layout/fragment_rutas" />
+	<fragment
+		android:id="@+id/listaRecolectorFragment2"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaRecolectorFragment"
+		android:label="ListaRecolectorFragment" />
 </navigation>
