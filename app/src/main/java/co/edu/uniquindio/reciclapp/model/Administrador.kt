@@ -1,16 +1,17 @@
 package co.edu.uniquindio.reciclapp.model
 
-class Administrador (var idCiudadano:Long, var nombre:String, var apellido: String, var telefono:Long,
-                     var direccion: String, var correo: String, var contrasenia: String,
-                     var ventasAdmin: ArrayList<Venta>){
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-    init {
-        this.idCiudadano = idCiudadano
-        this.nombre = nombre
-        this.apellido = apellido
-        this.telefono = telefono
-        this.direccion = direccion
-        this.correo = correo
-        this.contrasenia = contrasenia
-    }
-}
+@Entity
+class Administrador(
+    @PrimaryKey(autoGenerate = true)
+    override val id: Int,
+    cedula: Int,
+    nombre: String,
+    apellido: String,
+    telefono: Long,
+    direccion: String,
+    correo: String,
+    contrasenia: String
+) : Usuario(id, cedula, nombre, apellido, telefono, direccion, correo, contrasenia)

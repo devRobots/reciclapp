@@ -1,4 +1,13 @@
 package co.edu.uniquindio.reciclapp.model
 
-class DetalleVenta (var precioUnidad: Double, var cantidad:Double, var venta: Venta, var material:Material) {
-}
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
+data class DetalleVenta (
+    @PrimaryKey(autoGenerate = true)
+    var id: Int,
+    var precioUnidad: Double,
+    var venta: Venta,
+    var material:Material
+)

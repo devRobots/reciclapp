@@ -1,12 +1,13 @@
 package co.edu.uniquindio.reciclapp.model
 
-class Recolector (var idRecolector: Long, var nombre: String, var telefono: Long, var correo: String,
-                  var citasRecolector: ArrayList<Cita>) {
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-    init{
-        this.idRecolector = idRecolector
-        this.nombre = nombre
-        this.telefono = telefono
-        this.correo = correo
-    }
-}
+@Entity
+data class Recolector(
+    @PrimaryKey(autoGenerate = true)
+    var id: Int,
+    var nombre: String,
+    var telefono: Long,
+    var correo: String
+)

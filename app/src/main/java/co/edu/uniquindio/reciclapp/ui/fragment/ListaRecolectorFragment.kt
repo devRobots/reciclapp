@@ -4,16 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListRecolectorAdapter
-import co.edu.uniquindio.reciclapp.adapter.ListRetiroAdapter
 import co.edu.uniquindio.reciclapp.model.Recolector
-import co.edu.uniquindio.reciclapp.model.Retiro
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -31,7 +28,6 @@ class ListaRecolectorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_lista, container, false)
 
         recyclerView = view.findViewById(R.id.rcvRetiroRealizado)
@@ -47,11 +43,11 @@ class ListaRecolectorFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
         val elements = ArrayList<Recolector>()
-        elements.add( Recolector(1, "Camilo Quiceno", 3196681290, "ccquicenol@uqvirtual.edu.co", ArrayList() ))
-        elements.add( Recolector(2,"Samara Rincon", 3392039, "ssrinconm@uqvirtual.edu.co", ArrayList()))
-        elements.add( Recolector(3, "Yesid Rosas", 31392193, "ysrosast@uqvirtual.edu.co", ArrayList()))
-        recyclerView.adapter = ListRecolectorAdapter(elements, activity, View.OnClickListener {
+        elements.add( Recolector(1, "Camilo Quiceno", 3196681290, "ccquicenol@uqvirtual.edu.co" ))
+        elements.add( Recolector(2,"Samara Rincon", 3392039, "ssrinconm@uqvirtual.edu.co"))
+        elements.add( Recolector(3, "Yesid Rosas", 31392193, "ysrosast@uqvirtual.edu.co"))
+        recyclerView.adapter = ListRecolectorAdapter(elements, activity) {
             findNavController().navigate(R.id.nav_recolector)
-        })
+        }
     }
 }

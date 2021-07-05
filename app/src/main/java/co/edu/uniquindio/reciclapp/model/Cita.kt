@@ -1,8 +1,17 @@
 package co.edu.uniquindio.reciclapp.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.util.*
 
-class Cita (var idCita: Long, var fecha:Date, var hora:String, var estado:EstadoCita,
-            var calificacion: Long, var cantidadMaterial: Long, var usuario: Usuario,
-            var recolector: Recolector) {
-}
+@Entity
+data class Cita(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int,
+    var fecha: Date,
+    var hora: String,
+    var estado: EstadoCita,
+    var calificacion: Double,
+    var recolector: Recolector,
+    var usuario: Usuario
+)

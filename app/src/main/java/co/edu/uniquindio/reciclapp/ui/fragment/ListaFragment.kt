@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListRetiroAdapter
-import co.edu.uniquindio.reciclapp.model.Retiro
+import co.edu.uniquindio.reciclapp.model.Cita
+import co.edu.uniquindio.reciclapp.model.EstadoCita
+import co.edu.uniquindio.reciclapp.model.Recolector
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -27,7 +29,6 @@ class ListaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_lista, container, false)
 
         recyclerView = view.findViewById(R.id.rcvRetiroRealizado)
@@ -41,10 +42,11 @@ class ListaFragment : Fragment() {
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
 
-        val elements = ArrayList<Retiro>()
-        elements.add( Retiro( Date(),"12:00",45))
-        elements.add( Retiro( Date(),"14:00",445))
-        elements.add( Retiro( Date(),"13:00",3))
+        val elements = ArrayList<Cita>()
+        // TODO: Persistir
+        // elements.add( Cita( 1, Date(),"12:00", EstadoCita.EN_PROCESO,4.5, null, null))
+        // elements.add( Cita( 2, Date(),"14:00", EstadoCita.EN_PROCESO,4.5, null, null))
+        // elements.add( Cita( 3, Date(),"13:00", EstadoCita.EN_PROCESO,3.0, null, null))
         recyclerView.adapter = ListRetiroAdapter(elements, activity)
     }
 

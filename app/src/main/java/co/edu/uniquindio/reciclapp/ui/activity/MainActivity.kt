@@ -3,7 +3,6 @@ package co.edu.uniquindio.reciclapp.ui.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.model.Retiro
 
 class MainActivity : AppCompatActivity() {
 

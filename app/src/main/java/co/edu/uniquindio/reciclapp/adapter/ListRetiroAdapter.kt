@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.model.Retiro
+import co.edu.uniquindio.reciclapp.model.Cita
 
-class ListRetiroAdapter(var itemList: List<Retiro>, context: Context?) : RecyclerView.Adapter<ListRetiroAdapter.ViewHolder>() {
+class ListRetiroAdapter(var itemList: List<Cita>, context: Context?) : RecyclerView.Adapter<ListRetiroAdapter.ViewHolder>() {
     private val mInflater: LayoutInflater = LayoutInflater.from(context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,10 +30,10 @@ class ListRetiroAdapter(var itemList: List<Retiro>, context: Context?) : Recycle
         private var hora: TextView = itemView.findViewById(R.id.txtListElementHora)
         private var material: TextView = itemView.findViewById(R.id.txtListElementTotal)
 
-        fun binData(item: Retiro) {
+        fun binData(item: Cita) {
             fecha.text = item.fecha.toString()
             hora.text = item.hora
-            material.text = item.totalMaterial.toString()
+            material.text = "3" // TODO: item.totalMaterial.toString()
         }
     }
 

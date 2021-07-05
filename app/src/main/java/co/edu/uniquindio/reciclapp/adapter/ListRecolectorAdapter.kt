@@ -29,7 +29,7 @@ class ListRecolectorAdapter(var itemList: List<Recolector>, context: Context?,va
         private var telefono: TextView = itemView.findViewById(R.id.txtListRecolectorTelefono)
 
         fun binData(item: Recolector) {
-            id.text = item.idRecolector.toString()
+            id.text = item.id.toString()
             nombre.text = item.nombre
             telefono.text = item.telefono.toString()
             itemView.setOnClickListener(listener)
