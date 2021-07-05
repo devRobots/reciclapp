@@ -47,4 +47,8 @@
 		android:id="@+id/listaCompradorFragment"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaCompradorFragment"
 		android:label="@string/fragment_lista_comprador" />
+	<fragment
+		android:id="@+id/listaCitaFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaCitaFragment"
+		android:label="ListaCitaFragment" />
 </navigation>

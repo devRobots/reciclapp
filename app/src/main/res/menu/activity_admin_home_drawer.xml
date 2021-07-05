@@ -13,7 +13,7 @@
             <menu>
                 <group android:checkableBehavior="single">
                     <item
-                        android:id="@+id/citasFragment"
+                        android:id="@+id/listaCitaFragment"
                         android:icon="@drawable/ic_baseline_book_24"
                         android:title="@string/menu_citas" />
                     <item
