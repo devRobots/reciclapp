@@ -28,7 +28,7 @@ class Defaults(private val context: Activity, private val roomApp: RoomApp) {
     }
 
     private suspend fun initVenta() {
-        val admin = roomApp.admin.administradorDAO().obtenerPorId(1)
+        val admin = roomApp.admin.administradorDAO().obtenerPorId(1)!!
 
         val comprador1 = roomApp.admin.compradorDAO().obtenerPorId(1)
         val comprador2 = roomApp.admin.compradorDAO().obtenerPorId(2)
@@ -40,11 +40,11 @@ class Defaults(private val context: Activity, private val roomApp: RoomApp) {
     }
 
     private suspend fun initCita() {
+        val usuario = roomApp.admin.usuarioDAO().obtenerPorId(1)!!
+
         val rec1 = roomApp.admin.recolectorDAO().obtenerPorId(1)
         val rec2 = roomApp.admin.recolectorDAO().obtenerPorId(2)
         val rec3 = roomApp.admin.recolectorDAO().obtenerPorId(3)
-
-        val usuario = roomApp.admin.usuarioDAO().obtenerPorId(1)
 
         val cita1 = Cita(1, Date(), "3:39", EstadoCita.ACEPTADO, 1.2, rec1, usuario)
         val cita2 = Cita(2, Date(), "4:39", EstadoCita.APLAZADO, 4.2, rec2, usuario)

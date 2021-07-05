@@ -1,5 +1,6 @@
 package co.edu.uniquindio.reciclapp.data
 
+import androidx.annotation.Nullable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import co.edu.uniquindio.reciclapp.model.Administrador
@@ -12,4 +13,6 @@ data class Config(
     val id: Int = 1,
     var usuario: Usuario?,
     var administrador: Administrador?
-)
+) {
+    constructor(id: Int) : this(id, null, null)
+}

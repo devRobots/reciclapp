@@ -14,15 +14,23 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
+import co.edu.uniquindio.reciclapp.data.Config
+import co.edu.uniquindio.reciclapp.data.RoomApp
+import kotlinx.coroutines.launch
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var roomApp: RoomApp
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        roomApp = RoomApp(this)
+
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -37,9 +45,13 @@ class HomeActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_home, R.id.nav_slideshow),
             drawerLayout)
         navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {
+            lifecycleScope.launch {
+                roomApp.config.configDAO().actualizar(Config(1))
+            }
+
             val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
-            finishActivity(0)
+            this@HomeActivity.finish()
             true
         }
         setupActionBarWithNavController(navController, appBarConfiguration)

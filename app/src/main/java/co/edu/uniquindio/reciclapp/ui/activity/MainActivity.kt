@@ -1,6 +1,7 @@
 package co.edu.uniquindio.reciclapp.ui.activity
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
@@ -36,6 +37,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkSession() {
-        // TODO("Not yet implemented")
+        lifecycleScope.launch {
+            val configs = roomApp.config.configDAO().obtenerConfiguraciones()[0]
+
+            var intent: Intent? = null
+            if (configs.usuario != null) {
+                intent = Intent(this@MainActivity, HomeActivity::class.java)
+            }
+            else if (configs.usuario != null) {
+                intent = Intent(this@MainActivity, AdminHomeActivity::class.java)
+            }
+
+            if (intent != null) {
+                startActivity(intent)
+                this@MainActivity.finish()
+            }
+        }
     }
 }

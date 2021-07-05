@@ -9,7 +9,10 @@ interface UsuarioDAO {
     suspend fun obtenerTodas(): List<Usuario>
 
     @Query("SELECT * FROM Usuario WHERE id = :id")
-    suspend fun obtenerPorId(id: Int): Usuario
+    suspend fun obtenerPorId(id: Int): Usuario?
+
+    @Query("SELECT * FROM Usuario WHERE cedula = :cedula AND contrasenia = :contrasenia")
+    suspend fun login(cedula: Int, contrasenia: String): Usuario?
 
     @Update
     suspend fun actualizar(usuario: Usuario)

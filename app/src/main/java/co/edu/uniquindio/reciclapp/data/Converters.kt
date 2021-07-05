@@ -28,21 +28,21 @@ class Converters {
 
     // Conversores de Usuario
     @TypeConverter
-    fun gsonToUsuario(json: String): Usuario? {
+    fun gsonToUsuario(json: String?): Usuario? {
         return Gson().fromJson(json, Usuario::class.java)
     }
     @TypeConverter
-    fun usuarioToGson(usuario: Usuario): String? {
+    fun usuarioToGson(usuario: Usuario?): String? {
         return Gson().toJson(usuario)
     }
 
     // Conversores de Administrador
     @TypeConverter
-    fun gsonToAdministrador(json: String): Administrador? {
+    fun gsonToAdministrador(json: String?): Administrador? {
         return Gson().fromJson(json, Administrador::class.java)
     }
     @TypeConverter
-    fun administradorToGson(administrador: Administrador): String? {
+    fun administradorToGson(administrador: Administrador?): String? {
         return Gson().toJson(administrador)
     }
 
