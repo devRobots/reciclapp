@@ -17,6 +17,7 @@ import co.edu.uniquindio.reciclapp.model.*
 @TypeConverters(Converters::class)
 abstract class AdminDB : RoomDatabase() {
     abstract fun administradorDAO(): AdministradorDAO
+    abstract fun usuarioDAO(): UsuarioDAO
     abstract fun citaDAO(): CitaDAO
     abstract fun compradorDAO(): CompradorDAO
     abstract fun detalleVentaDAO(): DetalleVentaDAO
