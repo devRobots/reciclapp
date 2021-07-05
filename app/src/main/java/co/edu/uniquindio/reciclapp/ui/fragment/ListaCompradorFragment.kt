@@ -43,6 +43,7 @@ class ListaCompradorFragment : Fragment() {
 
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(activity)
+        roomApp = RoomApp(requireContext())
 
         lifecycleScope.launch {
             val elements = roomApp.admin.compradorDAO().obtenerTodas()
