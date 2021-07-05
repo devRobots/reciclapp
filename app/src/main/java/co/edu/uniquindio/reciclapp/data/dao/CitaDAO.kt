@@ -10,17 +10,17 @@ import co.edu.uniquindio.reciclapp.model.Cita
 @Dao
 interface CitaDAO {
     @Query("SELECT * FROM Cita")
-    fun obtenerTodas(): List<Cita>
+    suspend fun obtenerTodas(): List<Cita>
 
     @Query("SELECT * FROM Cita WHERE id = :id")
-    fun obtenerPorId(id: Int): Cita
+    suspend fun obtenerPorId(id: Int): Cita
 
     @Update
-    fun actualizar(cita: Cita)
+    suspend fun actualizar(cita: Cita)
 
     @Insert
-    fun insertar(cita: List<Cita>)
+    suspend fun insertar(cita: List<Cita>)
 
     @Delete
-    fun eliminar(cita: Cita)
+    suspend fun eliminar(cita: Cita)
 }

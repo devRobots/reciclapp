@@ -6,17 +6,17 @@ import co.edu.uniquindio.reciclapp.model.Usuario
 @Dao
 interface UsuarioDAO {
     @Query("SELECT * FROM Usuario")
-    fun obtenerTodas(): List<Usuario>
+    suspend fun obtenerTodas(): List<Usuario>
 
     @Query("SELECT * FROM Usuario WHERE id = :id")
-    fun obtenerPorId(id: Int): Usuario
+    suspend fun obtenerPorId(id: Int): Usuario
 
     @Update
-    fun actualizar(usuario: Usuario)
+    suspend fun actualizar(usuario: Usuario)
 
     @Insert
-    fun insertar(usuario: List<Usuario>)
+    suspend fun insertar(usuario: List<Usuario>)
 
     @Delete
-    fun eliminar(usuario: Usuario)
+    suspend fun eliminar(usuario: Usuario)
 }

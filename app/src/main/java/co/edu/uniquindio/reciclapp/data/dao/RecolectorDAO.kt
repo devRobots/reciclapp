@@ -6,17 +6,17 @@ import co.edu.uniquindio.reciclapp.model.Recolector
 @Dao
 interface RecolectorDAO {
     @Query("SELECT * FROM Recolector")
-    fun obtenerTodas(): List<Recolector>
+    suspend fun obtenerTodas(): List<Recolector>
 
     @Query("SELECT * FROM Recolector WHERE id = :id")
-    fun obtenerPorId(id: Int): Recolector
+    suspend fun obtenerPorId(id: Int): Recolector
 
     @Update
-    fun actualizar(recolector: Recolector)
+    suspend fun actualizar(recolector: Recolector)
 
     @Insert
-    fun insertar(recolector: List<Recolector>)
+    suspend fun insertar(recolector: List<Recolector>)
 
     @Delete
-    fun eliminar(recolector: Recolector)
+    suspend fun eliminar(recolector: Recolector)
 }

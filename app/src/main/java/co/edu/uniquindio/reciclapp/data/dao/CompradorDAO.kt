@@ -10,17 +10,17 @@ import co.edu.uniquindio.reciclapp.model.Comprador
 @Dao
 interface CompradorDAO {
     @Query("SELECT * FROM Comprador")
-    fun obtenerTodas(): List<Comprador>
+    suspend fun obtenerTodas(): List<Comprador>
 
     @Query("SELECT * FROM Comprador WHERE id = :id")
-    fun obtenerPorId(id: Int): Comprador
+    suspend fun obtenerPorId(id: Int): Comprador
 
     @Update
-    fun actualizar(comprador: Comprador)
+    suspend fun actualizar(comprador: Comprador)
 
     @Insert
-    fun insertar(compradores: List<Comprador>)
+    suspend fun insertar(compradores: List<Comprador>)
 
     @Delete
-    fun eliminar(comprador: Comprador)
+    suspend fun eliminar(comprador: Comprador)
 }

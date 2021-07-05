@@ -6,17 +6,17 @@ import co.edu.uniquindio.reciclapp.model.Material
 @Dao
 interface MaterialDAO {
     @Query("SELECT * FROM Material")
-    fun obtenerTodas(): List<Material>
+    suspend fun obtenerTodas(): List<Material>
 
     @Query("SELECT * FROM Material WHERE id = :id")
-    fun obtenerPorId(id: Int): Material
+    suspend fun obtenerPorId(id: Int): Material
 
     @Update
-    fun actualizar(material: Material)
+    suspend fun actualizar(material: Material)
 
     @Insert
-    fun insertar(material: List<Material>)
+    suspend fun insertar(material: List<Material>)
 
     @Delete
-    fun eliminar(material: Material)
+    suspend fun eliminar(material: Material)
 }

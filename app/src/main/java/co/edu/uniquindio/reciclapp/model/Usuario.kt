@@ -4,9 +4,9 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-open class Usuario(
+data class Usuario(
     @PrimaryKey(autoGenerate = true)
-    open val id: Int,
+    val id: Int,
     val cedula: Int,
     var nombre: String,
     var apellido: String,
