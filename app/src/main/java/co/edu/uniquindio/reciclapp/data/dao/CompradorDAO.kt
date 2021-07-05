@@ -13,7 +13,7 @@ interface CompradorDAO {
     suspend fun obtenerTodas(): List<Comprador>
 
     @Query("SELECT * FROM Comprador WHERE id = :id")
-    suspend fun obtenerPorId(id: Int): Comprador
+    suspend fun obtenerPorId(id: Int): Comprador?
 
     @Update
     suspend fun actualizar(comprador: Comprador)

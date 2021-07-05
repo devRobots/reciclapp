@@ -6,7 +6,7 @@ import co.edu.uniquindio.reciclapp.data.Config
 @Dao
 interface ConfigDAO {
     @Query("SELECT * FROM Config WHERE id = 1")
-    suspend fun obtenerConfiguraciones(): List<Config>
+    suspend fun obtenerConfiguraciones(): Config
 
     @Update
     suspend fun actualizar(config: Config)

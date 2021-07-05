@@ -30,8 +30,8 @@ class Defaults(private val context: Activity, private val roomApp: RoomApp) {
     private suspend fun initVenta() {
         val admin = roomApp.admin.administradorDAO().obtenerPorId(1)!!
 
-        val comprador1 = roomApp.admin.compradorDAO().obtenerPorId(1)
-        val comprador2 = roomApp.admin.compradorDAO().obtenerPorId(2)
+        val comprador1 = roomApp.admin.compradorDAO().obtenerPorId(1)!!
+        val comprador2 = roomApp.admin.compradorDAO().obtenerPorId(2)!!
 
         val venta1 = Venta(1, Date(), "3:21", 5, 130044, comprador1, admin)
         val venta2 = Venta(2, Date(), "4:21", 5, 1345544, comprador2, admin)
@@ -108,7 +108,7 @@ class Defaults(private val context: Activity, private val roomApp: RoomApp) {
     }
 
     private suspend fun initConfig() {
-        roomApp.config.configDAO().insertar(listOf(Config(1, null, null)))
+        roomApp.config.configDAO().insertar(listOf(Config(1)))
     }
 
 }

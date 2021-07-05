@@ -52,7 +52,7 @@ class LoginFragment : Fragment() {
         lifecycleScope.launch {
             val admin = roomApp.admin.administradorDAO().login(cedula.toInt(), contrasenia)
             if (admin != null) {
-                val configs = roomApp.config.configDAO().obtenerConfiguraciones()[0]
+                val configs = roomApp.config.configDAO().obtenerConfiguraciones()
                 configs.administrador = admin
                 roomApp.config.configDAO().actualizar(configs)
 
@@ -67,7 +67,7 @@ class LoginFragment : Fragment() {
         lifecycleScope.launch {
             val usuario = roomApp.usuario.usuarioDAO().login(cedula.toInt(), contrasenia)
             if (usuario != null) {
-                val configs = roomApp.config.configDAO().obtenerConfiguraciones()[0]
+                val configs = roomApp.config.configDAO().obtenerConfiguraciones()
                 configs.usuario = usuario
                 roomApp.config.configDAO().actualizar(configs)
 
