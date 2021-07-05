@@ -1,18 +1,15 @@
 package co.edu.uniquindio.reciclapp.ui.fragment
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.adapter.ListCompradorAdapter
+import co.edu.uniquindio.reciclapp.adapter.ListRetiroAdapter
 import co.edu.uniquindio.reciclapp.data.RoomApp
 import kotlinx.coroutines.launch
 import java.util.*
@@ -20,10 +17,10 @@ import java.util.*
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ListaCompradorFragment.newInstance] factory method to
+ * Use the [TabRetiroPendienteFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ListaCompradorFragment : Fragment() {
+class TabRetiroPendienteFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var roomApp: RoomApp
@@ -33,6 +30,7 @@ class ListaCompradorFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_lista, container, false)
+
         recyclerView = view.findViewById(R.id.rcvRetiroRealizado)
 
         return view
@@ -44,13 +42,13 @@ class ListaCompradorFragment : Fragment() {
         roomApp = RoomApp(requireContext())
 
         recyclerView.setHasFixedSize(true)
-        recyclerView.layoutManager = LinearLayoutManager(activity)
+        recyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
 
         lifecycleScope.launch {
-            val elements = roomApp.admin.compradorDAO().obtenerTodas()
-            recyclerView.adapter = ListCompradorAdapter(elements, activity) {
-                findNavController().navigate(R.id.nav_comprador)
-            }
+            val usuario = roomApp.config.configDAO().obtenerConfiguraciones().usuario
+            val elements = roomApp.admin.citaDAO().obtenerPendientesPorUsuario(usuario!!)
+            recyclerView.adapter = ListRetiroAdapter(elements, activity)
         }
     }
+
 }
