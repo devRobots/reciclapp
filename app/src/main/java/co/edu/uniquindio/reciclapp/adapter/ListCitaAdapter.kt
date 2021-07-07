@@ -34,7 +34,7 @@ class ListCitaAdapter(var itemList: List<Cita>, context: Context?, val listener:
 
         fun binData(item: Cita) {
             estado.text = item.estado.toString()
-            usuario.text = item.usuario.toString()
+            usuario.text = item.usuario.nombre.toString()
             fecha.text = item.fecha.toString()
             hora.text = item.hora.toString()
             itemView.setOnClickListener(listener)
@@ -44,6 +44,5 @@ class ListCitaAdapter(var itemList: List<Cita>, context: Context?, val listener:
     override fun getItemCount(): Int {
         return itemList.size
     }
-
 
 }

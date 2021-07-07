@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
@@ -47,7 +48,9 @@ class TabRetiroRealizadoFragment : Fragment() {
         lifecycleScope.launch {
             val usuario = roomApp.config.configDAO().obtenerConfiguraciones().usuario
             val elements = roomApp.admin.citaDAO().obtenerFinalizadosPorUsuario(usuario!!)
-            recyclerView.adapter = ListRetiroAdapter(elements, activity)
+            recyclerView.adapter = ListRetiroAdapter(elements, activity){
+                findNavController().navigate(R.id.citasFragment)
+            }
         }
     }
 

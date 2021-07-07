@@ -39,7 +39,7 @@ class AdminHomeActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(R.id.nav_home_admin, R.id.nav_slideshow, R.id.listaRecolectorFragment2,
                 R.id.listaCompradorFragment, R.id.ventasFragment, R.id.estadisticasFragment,
-                R.id.citasFragment, R.id.rutasFragment), drawerLayout
+                R.id.listaCitaFragment, R.id.rutasFragment), drawerLayout
         )
         navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {
             lifecycleScope.launch {
