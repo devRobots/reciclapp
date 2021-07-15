@@ -10,13 +10,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.adapter.ListCitaAdapter
 import co.edu.uniquindio.reciclapp.adapter.ListRecolectorAdapter
-import co.edu.uniquindio.reciclapp.data.RoomApp
-import co.edu.uniquindio.reciclapp.model.Recolector
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 /**
@@ -50,7 +47,7 @@ class ListaRecolectorFragment : Fragment() {
         roomApp = RoomApp(requireContext())
 
         lifecycleScope.launch {
-            val elements = roomApp.admin.recolectorDAO().obtenerTodas()
+            val elements = roomApp.local.recolectorDAO().obtenerTodas()
             recyclerView.adapter = ListRecolectorAdapter(elements, activity) {
                 findNavController().navigate(R.id.nav_recolector)
             }

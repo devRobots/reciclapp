@@ -1,11 +1,11 @@
-package co.edu.uniquindio.reciclapp.data.database
+package co.edu.uniquindio.reciclapp.data.local.databases
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import co.edu.uniquindio.reciclapp.data.Config
-import co.edu.uniquindio.reciclapp.data.Converters
-import co.edu.uniquindio.reciclapp.data.dao.ConfigDAO
+import co.edu.uniquindio.reciclapp.data.local.Config
+import co.edu.uniquindio.reciclapp.data.local.Converters
+import co.edu.uniquindio.reciclapp.data.local.dao.ConfigDAO
 
 @Database(
     entities = [Config::class],

@@ -1,17 +1,14 @@
 package co.edu.uniquindio.reciclapp.ui.fragment
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 
 /**
@@ -37,7 +34,7 @@ class CompradorFragment : Fragment() {
         val edtCorreo = view.findViewById<EditText>(R.id.txtCompradorCorreo)
 
         lifecycleScope.launch {
-            val comprador = roomApp.admin.compradorDAO().obtenerPorId(1)
+            val comprador = roomApp.local.compradorDAO().obtenerPorId(1)
             if (comprador != null) {
                 edtNit?.setText(comprador.nit)
                 edtNombre?.setText(comprador.nombre)

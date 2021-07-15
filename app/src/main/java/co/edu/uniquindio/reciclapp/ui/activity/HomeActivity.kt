@@ -3,7 +3,6 @@ package co.edu.uniquindio.reciclapp.ui.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.widget.ImageView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -16,8 +15,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.Config
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.Config
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 
 class HomeActivity : AppCompatActivity() {

@@ -4,11 +4,10 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.Defaults
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.Defaults
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {

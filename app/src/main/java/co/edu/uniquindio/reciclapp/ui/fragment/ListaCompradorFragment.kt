@@ -1,8 +1,6 @@
 package co.edu.uniquindio.reciclapp.ui.fragment
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListCompradorAdapter
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -47,7 +45,7 @@ class ListaCompradorFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
         lifecycleScope.launch {
-            val elements = roomApp.admin.compradorDAO().obtenerTodas()
+            val elements = roomApp.local.compradorDAO().obtenerTodas()
             recyclerView.adapter = ListCompradorAdapter(elements, activity) {
                 findNavController().navigate(R.id.nav_comprador)
             }

@@ -8,12 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.ui.activity.HomeActivity
 import co.edu.uniquindio.reciclapp.ui.activity.AdminHomeActivity
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 
 /**
@@ -50,7 +49,7 @@ class LoginFragment : Fragment() {
 
     private fun esAdmin(cedula: String, contrasenia: String) {
         lifecycleScope.launch {
-            val admin = roomApp.admin.administradorDAO().login(cedula.toInt(), contrasenia)
+            val admin = roomApp.local.administradorDAO().login(cedula.toInt(), contrasenia)
             if (admin != null) {
                 val configs = roomApp.config.configDAO().obtenerConfiguraciones()
                 configs.administrador = admin
@@ -65,7 +64,7 @@ class LoginFragment : Fragment() {
 
     private fun esUser(cedula: String, contrasenia: String) {
         lifecycleScope.launch {
-            val usuario = roomApp.usuario.usuarioDAO().login(cedula.toInt(), contrasenia)
+            val usuario = roomApp.local.usuarioDAO().login(cedula.toInt(), contrasenia)
             if (usuario != null) {
                 val configs = roomApp.config.configDAO().obtenerConfiguraciones()
                 configs.usuario = usuario

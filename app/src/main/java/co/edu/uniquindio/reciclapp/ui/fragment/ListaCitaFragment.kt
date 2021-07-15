@@ -11,12 +11,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListCitaAdapter
-import co.edu.uniquindio.reciclapp.adapter.ListCompradorAdapter
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import co.edu.uniquindio.reciclapp.model.*
 import kotlinx.coroutines.launch
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 /**
@@ -52,7 +50,7 @@ class ListaCitaFragment : Fragment() {
         roomApp = RoomApp(requireContext())
 
         lifecycleScope.launch {
-            val elements = roomApp.admin.citaDAO().obtenerTodas()
+            val elements = roomApp.local.citaDAO().obtenerTodas()
             recyclerView.adapter = ListCitaAdapter(elements, activity) {
                 findNavController().navigate(R.id.citasFragment)
             }

@@ -1,4 +1,4 @@
-package co.edu.uniquindio.reciclapp.data
+package co.edu.uniquindio.reciclapp.data.local
 
 import androidx.room.TypeConverter
 import co.edu.uniquindio.reciclapp.model.*

@@ -1,10 +1,10 @@
-package co.edu.uniquindio.reciclapp.data.database
+package co.edu.uniquindio.reciclapp.data.local.databases
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import co.edu.uniquindio.reciclapp.data.Converters
-import co.edu.uniquindio.reciclapp.data.dao.*
+import co.edu.uniquindio.reciclapp.data.local.Converters
+import co.edu.uniquindio.reciclapp.data.local.dao.*
 import co.edu.uniquindio.reciclapp.model.*
 
 @Database(
@@ -15,7 +15,7 @@ import co.edu.uniquindio.reciclapp.model.*
     version = 1
 )
 @TypeConverters(Converters::class)
-abstract class AdminDB : RoomDatabase() {
+abstract class LocalDB : RoomDatabase() {
     abstract fun administradorDAO(): AdministradorDAO
     abstract fun usuarioDAO(): UsuarioDAO
     abstract fun citaDAO(): CitaDAO

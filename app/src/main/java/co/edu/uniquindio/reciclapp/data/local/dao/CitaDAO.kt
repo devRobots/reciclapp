@@ -1,4 +1,4 @@
-package co.edu.uniquindio.reciclapp.data.dao
+package co.edu.uniquindio.reciclapp.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Delete

@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListRetiroAdapter
-import co.edu.uniquindio.reciclapp.data.RoomApp
+import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -47,7 +47,7 @@ class TabRetiroPendienteFragment : Fragment() {
 
         lifecycleScope.launch {
             val usuario = roomApp.config.configDAO().obtenerConfiguraciones().usuario
-            val elements = roomApp.admin.citaDAO().obtenerPendientesPorUsuario(usuario!!)
+            val elements = roomApp.local.citaDAO().obtenerPendientesPorUsuario(usuario!!)
             recyclerView.adapter = ListRetiroAdapter(elements, activity){
                 findNavController().navigate(R.id.citasFragment)
             }
