@@ -2,11 +2,12 @@ package co.edu.uniquindio.reciclapp.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import co.edu.uniquindio.reciclapp.data.ObjetoBase
 
 @Entity
 data class Administrador(
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    override var id: Long,
     val cedula: Int,
     var nombre: String,
     var apellido: String,
@@ -14,4 +15,4 @@ data class Administrador(
     var direccion: String,
     var correo: String,
     var contrasenia: String
-)
+) : ObjetoBase (id, "administradores")

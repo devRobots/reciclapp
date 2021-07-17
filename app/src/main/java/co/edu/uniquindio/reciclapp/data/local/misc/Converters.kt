@@ -1,4 +1,4 @@
-package co.edu.uniquindio.reciclapp.data.local
+package co.edu.uniquindio.reciclapp.data.local.misc
 
 import androidx.room.TypeConverter
 import co.edu.uniquindio.reciclapp.model.*
@@ -64,16 +64,6 @@ class Converters {
     @TypeConverter
     fun ventaToGson(venta: Venta): String? {
         return Gson().toJson(venta)
-    }
-
-    // Conversores de DetalleVenta
-    @TypeConverter
-    fun gsonToDetalleVenta(json: String): DetalleVenta? {
-        return Gson().fromJson(json, DetalleVenta::class.java)
-    }
-    @TypeConverter
-    fun detalleVentaToGson(detalleVenta: DetalleVenta): String? {
-        return Gson().toJson(detalleVenta)
     }
 
     // Conversores de Material

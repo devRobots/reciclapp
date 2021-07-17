@@ -2,13 +2,14 @@ package co.edu.uniquindio.reciclapp.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import co.edu.uniquindio.reciclapp.data.ObjetoBase
 
 @Entity
 data class Material(
     @PrimaryKey(autoGenerate = true)
-    var id: Int,
+    override var id: Long,
     var tipo: TipoMaterial,
     var cantidad: Int,
-    var cita: Cita?,
-    var detalleVenta: DetalleVenta?
-)
+    var idCita: Long?,
+    var idVenta: Long?
+) : ObjetoBase(id, "materiales")

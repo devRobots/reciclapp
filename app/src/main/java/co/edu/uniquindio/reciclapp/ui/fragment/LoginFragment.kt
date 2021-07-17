@@ -52,7 +52,7 @@ class LoginFragment : Fragment() {
             val admin = roomApp.local.administradorDAO().login(cedula.toInt(), contrasenia)
             if (admin != null) {
                 val configs = roomApp.config.configDAO().obtenerConfiguraciones()
-                configs.administrador = admin
+                configs.idAdministrador = admin.id
                 roomApp.config.configDAO().actualizar(configs)
 
                 val intent = Intent(context, AdminHomeActivity::class.java)
@@ -67,7 +67,7 @@ class LoginFragment : Fragment() {
             val usuario = roomApp.local.usuarioDAO().login(cedula.toInt(), contrasenia)
             if (usuario != null) {
                 val configs = roomApp.config.configDAO().obtenerConfiguraciones()
-                configs.usuario = usuario
+                configs.idUsuario = usuario.id
                 roomApp.config.configDAO().actualizar(configs)
 
                 val intent = Intent(context, HomeActivity::class.java)

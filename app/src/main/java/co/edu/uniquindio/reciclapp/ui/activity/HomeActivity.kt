@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.local.Config
+import co.edu.uniquindio.reciclapp.data.local.misc.Config
 import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 

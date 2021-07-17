@@ -1,12 +1,11 @@
 package co.edu.uniquindio.reciclapp.ui.activity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.local.Defaults
+import co.edu.uniquindio.reciclapp.data.local.misc.Defaults
 import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 
@@ -21,29 +20,20 @@ class MainActivity : AppCompatActivity() {
         roomApp = RoomApp(this)
 
         lifecycleScope.launch {
-            val preferences = getPreferences(Context.MODE_PRIVATE)
-            val dbReady = preferences.getBoolean("db_ready", false)
-            if (!dbReady) {
-                initDB()
-            } else {
-                checkSession()
-            }
+            val default = Defaults(this@MainActivity, roomApp)
+            default.init()
+            checkSession()
         }
-    }
-
-    private suspend fun initDB() {
-        val defaults = Defaults(this, roomApp)
-        defaults.init()
     }
 
     private suspend fun checkSession() {
         val configs = roomApp.config.configDAO().obtenerConfiguraciones()
 
         var intent: Intent? = null
-        if (configs.usuario != null) {
+        if (configs.idUsuario != null) {
             intent = Intent(this@MainActivity, HomeActivity::class.java)
         }
-        else if (configs.administrador != null) {
+        else if (configs.idAdministrador != null) {
             intent = Intent(this@MainActivity, AdminHomeActivity::class.java)
         }
 

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1000509682036",
+    "firebase_url": "https://reciclapp-uq-default-rtdb.firebaseio.com",
+    "project_id": "reciclapp-uq",
+    "storage_bucket": "reciclapp-uq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000509682036:android:a4f0942da16b5ac33d3c21",
+        "android_client_info": {
+          "package_name": "co.edu.uniquindio.reciclapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000509682036-0ui9e5a4egtb03uv8423vl3pbdmjv7pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn1WgIKi_K6lOnB4ax7x8sbjksfKXOERU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000509682036-0ui9e5a4egtb03uv8423vl3pbdmjv7pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

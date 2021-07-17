@@ -9,7 +9,7 @@ interface MaterialDAO {
     suspend fun obtenerTodas(): List<Material>
 
     @Query("SELECT * FROM Material WHERE id = :id")
-    suspend fun obtenerPorId(id: Int): Material
+    suspend fun obtenerPorId(id: kotlin.Long): Material?
 
     @Update
     suspend fun actualizar(material: Material)

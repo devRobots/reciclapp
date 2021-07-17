@@ -46,7 +46,7 @@ class TabRetiroRealizadoFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
 
         lifecycleScope.launch {
-            val usuario = roomApp.config.configDAO().obtenerConfiguraciones().usuario
+            val usuario = roomApp.config.configDAO().obtenerConfiguraciones().idUsuario
             val elements = roomApp.local.citaDAO().obtenerFinalizadosPorUsuario(usuario!!)
             recyclerView.adapter = ListRetiroAdapter(elements, activity){
                 findNavController().navigate(R.id.citasFragment)
