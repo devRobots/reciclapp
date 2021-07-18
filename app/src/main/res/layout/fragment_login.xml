@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
-            android:hint="@string/fragment_login_cedula"
+            android:hint="@string/cedula"
             android:inputType="number|text|textEmailAddress|phone"
             android:selectAllOnFocus="true" />
 
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
-            android:hint="@string/fragment_login_contrasenia"
+            android:hint="@string/contraseña"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:selectAllOnFocus="true" />
@@ -50,7 +50,7 @@
             android:id="@+id/btnLoginIngresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_login_ingresar" />
+            android:text="@string/ingresar" />
     </LinearLayout>
 
 </LinearLayout>

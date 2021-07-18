@@ -12,12 +12,12 @@
 	<fragment
 		android:id="@+id/nav_recolector"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RecolectorFragment"
-		android:label="@string/menu_recolectores"
+		android:label="@string/recuperadores"
 		tools:layout="@layout/fragment_recolector" />
 	<fragment
 		android:id="@+id/nav_comprador"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.CompradorFragment"
-		android:label="@string/menu_compradores"
+		android:label="@string/compradores"
 		tools:layout="@layout/fragment_comprador" />
 	<fragment
 		android:id="@+id/estadisticasFragment"
@@ -42,11 +42,11 @@
 	<fragment
 		android:id="@+id/listaRecolectorFragment2"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaRecolectorFragment"
-		android:label="@string/fragment_lista_recolector" />
+		android:label="@string/recuperadores" />
 	<fragment
 		android:id="@+id/listaCompradorFragment"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaCompradorFragment"
-		android:label="@string/fragment_lista_comprador" />
+		android:label="@string/compradores" />
 	<fragment
 		android:id="@+id/listaCitaFragment"
 		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaCitaFragment"

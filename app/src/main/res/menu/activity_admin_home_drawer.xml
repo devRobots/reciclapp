@@ -45,11 +45,11 @@
                     <item
                         android:id="@+id/listaRecolectorFragment2"
                         android:icon="@drawable/ic_baseline_hiking_24"
-                        android:title="@string/menu_recolectores" />
+                        android:title="@string/recuperadores" />
                     <item
                         android:id="@+id/listaCompradorFragment"
                         android:icon="@drawable/ic_baseline_hail_24"
-                        android:title="@string/menu_compradores" />
+                        android:title="@string/compradores" />
                 </group>
             </menu>
         </item>

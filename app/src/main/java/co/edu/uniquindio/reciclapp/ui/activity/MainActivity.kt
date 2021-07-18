@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
         roomApp = RoomApp(this)
 
         lifecycleScope.launch {
-            val default = Defaults(this@MainActivity, roomApp)
-            default.init()
             checkSession()
         }
     }

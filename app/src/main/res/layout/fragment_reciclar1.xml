@@ -60,7 +60,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_weight="4"
                     android:gravity="left|center_vertical"
-                    android:text="@string/fragment_reciclar1_carton"
+                    android:text="@string/carton"
                     android:textSize="18sp" />
 
                 <ImageView
@@ -116,7 +116,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_weight="4"
                     android:gravity="left|center_vertical"
-                    android:text="@string/fragment_reciclar1_plastico_pet"
+                    android:text="@string/plastico_pet"
                     android:textSize="18sp" />
 
                 <ImageView
@@ -172,7 +172,7 @@
                     android:layout_marginStart="12dp"
                     android:layout_weight="4"
                     android:gravity="left|center_vertical"
-                    android:text="@string/fragment_reciclar1_vidrio"
+                    android:text="@string/vidrio"
                     android:textSize="18sp" />
 
                 <ImageView
@@ -224,6 +224,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="20dp"
-        android:text="@string/fragment_reciclar1_siguiente" />
+        android:text="@string/siguiente" />
 
 </LinearLayout>

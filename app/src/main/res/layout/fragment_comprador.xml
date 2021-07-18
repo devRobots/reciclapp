@@ -33,7 +33,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:ems="10"
-                android:hint="@string/fragment_comprador_Nit"
+                android:hint="@string/nit"
                 android:inputType="number"
                 android:autofillHints="" />
 
@@ -45,7 +45,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:ems="10"
-                android:hint="@string/fragment_comprador_nombre"
+                android:hint="@string/nombre"
                 android:inputType="textPersonName"
                 android:autofillHints="" />
 
@@ -57,7 +57,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:ems="10"
-                android:hint="@string/fragment_comprador_celular"
+                android:hint="@string/celular"
                 android:inputType="phone"
                 android:autofillHints="" />
 
@@ -69,7 +69,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:ems="10"
-                android:hint="@string/fragment_comprador_correo"
+                android:hint="@string/correo"
                 android:inputType="textEmailAddress"
                 android:autofillHints="" />
 
@@ -80,7 +80,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
-                android:text="@string/fragment_recolector_guardar" />
+                android:text="@string/guardar" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

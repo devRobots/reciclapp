@@ -34,14 +34,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/secundario"
-            android:text="@string/fragment_acceso_ingresar" />
+            android:text="@string/ingresar" />
 
         <Button
             android:id="@+id/btnAccesoRegistrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/primario"
-            android:text="@string/fragment_acceso_registro" />
+            android:text="@string/registro" />
 
         <Button
             android:id="@+id/btnAccesoQuienesSomos"

@@ -32,7 +32,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
-			android:hint="@string/fragment_registro_nombre"
+			android:hint="@string/nombre"
 			android:inputType="none|textPersonName"
 			android:selectAllOnFocus="true" />
 
@@ -41,7 +41,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
-			android:hint="@string/fragment_registro_cedula"
+			android:hint="@string/cedula"
 			android:inputType="number|text|textEmailAddress|phone"
 			android:selectAllOnFocus="true" />
 
@@ -50,7 +50,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
-			android:hint="@string/fragment_registro_contrasenia"
+			android:hint="@string/contraseña"
 			android:imeOptions="actionDone"
 			android:inputType="textPassword"
 			android:selectAllOnFocus="true" />
@@ -60,7 +60,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
-			android:hint="@string/fragment_registro_correo"
+			android:hint="@string/correo"
 			android:imeOptions="actionDone"
 			android:inputType="none|textEmailAddress"
 			android:selectAllOnFocus="true" />
@@ -70,7 +70,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
-			android:hint="@string/fragment_registro_direccion"
+			android:hint="@string/direccion"
 			android:imeOptions="actionDone"
 			android:inputType="none|textPostalAddress"
 			android:selectAllOnFocus="true" />
@@ -79,7 +79,7 @@
 			android:id="@+id/btnRegistrarRegistro"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="@string/fragment_registro_registrar" />
+			android:text="@string/registrar" />
 
 	</LinearLayout>
 </LinearLayout>

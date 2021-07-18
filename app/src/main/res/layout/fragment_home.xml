@@ -73,7 +73,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/fragment_home_usuario_carton"
+                                android:text="@string/carton"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="@color/white" />
 
@@ -106,7 +106,7 @@
                                 android:id="@+id/textView4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/fragment_home_usuario_plastico"
+                                android:text="@string/plastico"
                                 android:textColor="@color/white" />
 
                             <TextView
@@ -137,7 +137,7 @@
                                 android:id="@+id/textView5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/fragment_home_usuario_vidrio"
+                                android:text="@string/vidrio"
                                 android:textColor="@color/white" />
 
                             <TextView
