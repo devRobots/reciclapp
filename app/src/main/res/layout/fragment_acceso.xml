@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
-            android:contentDescription="@string/fragment_acceso_content_logo"
+            android:contentDescription="@string/descripcion_img"
             android:src="@drawable/logo_crq_blanco" />
     </androidx.cardview.widget.CardView>
 
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/secundario_variante"
-            android:text="@string/fragment_acceso_quienes_somos" />
+            android:text="@string/quienes_somos" />
     </LinearLayout>
 
 </LinearLayout>

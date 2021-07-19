@@ -1,58 +1,23 @@
 <resources>
 	<string name="app_name">Reciclapp</string>
 
-	<!-- Fragment Acceso -->
-	<string name="fragment_acceso_quienes_somos">¿Quiénes somos?</string>
-	<string name="fragment_acceso_content_logo">Logo de la CRQ</string>
-
-	<!-- Fragment Login -->
-	<string name="fragment_login_cuenta_desconocida">La cedula y/o contraseña no coinciden con nuestros registros.</string>
-
-	<!-- Home Activity -->
+	<!-- No setteados -->
 	<string name="title_activity_home">HomeActivity</string>
 	<string name="navigation_drawer_open">Open navigation drawer</string>
 	<string name="navigation_drawer_close">Close navigation drawer</string>
 	<string name="action_settings">Settings</string>
-
-	<!-- Menu Nav -->
 	<string name="nav_header_subtitle">android.studio@android.com</string>
 	<string name="nav_header_desc">Navigation header</string>
 
-	<!-- Fragment Home -->
-	<string name="fragment_home_usuario_estadisticas">Estadísticas de Aprovechables</string>
-	<string name="fragment_home_usuario_default_int">0</string>
-	<string name="fragment_home_usuario_default_ultimos_mes">Último mes</string>
-	<string name="fragment_home_usuario_ver_mas">Ver más…</string>
-	<string name="fragment_home_usuario_info">Información General</string>
-	<string name="fragment_home_usuario_citas">Citas</string>
-	<string name="fragment_home_usuario_servicio_al_cliente">Servicio al cliente</string>
-	<string name="fragment_home_usuario_buzon_de_sugerencias">Búzon de sugerencias</string>
-	<string name="fragment_home_usuario_ayuda">Ayuda</string>
-
 	<!-- Fragment Reciclar 1 -->
-	<string name="fragment_reciclar1_titulo">CUENTA Y RECICLA</string>
-	<string name="fragment_reciclar1_subtitulo">tu material reciclable</string>
-	<string name="fragment_reciclar1_checkboxText">¿ Tienes papel para reciclar ?</string>
-	<string name="fragment_reciclar1_unidades">unidades</string>
-
-	<!-- Fragment Reciclar 2 -->
-	<string name="fragment_reciclar2_titulo">DIA Y HORA DE RETIRO</string>
-	<string name="fragment_reciclar2_fecha_retiro">Fecha de retiro</string>
-	<string name="fragment_reciclar2_hora_retiro">Hora de retiro</string>
-
-	<!-- Fragment Reciclar 3 -->
-	<string name="fragment_reciclar3_titulo">Confirmar el retiro</string>
-
-	<!-- Fragment Perfil -->
-	<string name="fragment_perfil_titulo">Información personal</string>
-	<string name="fragment_perfil_eliminar_cuenta">Eliminar Cuenta</string>
-	<string name="fragment_perfil_cambiar_contrasenia">Cambiar contraseña</string>
-
-	<!-- Fragment Recolector -->
-	<string name="fragment_recolector_titulo">Información personal</string>
-
-	<!-- Fragment Comprador -->
-	<string name="fragment_comprador_titulo">Información personal</string>
+	<string name="reciclar_titulo">CUENTA Y RECICLA</string>
+	<string name="reciclar_subtitulo">Tu material reciclable</string>
+	<string name="papel_pregunta">¿Tienes papel para reciclar?</string>
+	<string name="unidades">unidades</string>
+	<string name="fecha_hora_titulo">DIA Y HORA DE RETIRO</string>
+	<string name="fecha_retiro">Fecha de retiro</string>
+	<string name="hora_retiro">Hora de retiro</string>
+	<string name="confirmar_retiro">Confirmar el retiro</string>
 
 	<!-- Generales de Formularios -->
 	<string name="nit">NIT</string>
@@ -63,6 +28,8 @@
 	<string name="correo">Correo Electronico</string>
 	<string name="celular">Celular</string>
 	<string name="contraseña">Contraseña</string>
+	<string name="info_personal">Información Personal</string>
+	<string name="info_general">Información General</string>
 
 	<!--Generales de Controles -->
 	<string name="ingresar">Ingresar</string>
@@ -74,6 +41,9 @@
 	<string name="cancelar">Cancelar</string>
 	<string name="siguiente">Siguiente</string>
 	<string name="confirmar">Confirmar</string>
+	<string name="eliminar_cuenta">Eliminar Cuenta</string>
+	<string name="cambiar_contraseña">Cambiar Contraseña</string>
+	<string name="quienes_somos">¿Quiénes somos?</string>
 
 	<!-- Generales de Personas -->
 	<string name="compradores">Compradores</string>
@@ -87,18 +57,32 @@
 	<string name="plastico">Plástico</string>
 	<string name="plastico_pet">Plástico PET</string>
 
-	<!-- Generales de Menus -->
-	<string name="menu_home">Inicio</string>
-	<string name="menu_perfil">Perfil</string>
-	<string name="menu_retiros">Retiros</string>
-	<string name="menu_citas">Citas</string>
-	<string name="menu_estadisticas">Estadísticas</string>
-	<string name="menu_ventas">Ventas</string>
-	<string name="menu_wiki">Wiki</string>
-	<string name="menu_rutas">Rutas</string>
-	<string name="menu_logout">Cerrar Sesión</string>
+	<!-- Conceptos Generales de la App -->
+	<string name="inicio">Inicio</string>
+	<string name="perfil">Perfil</string>
+	<string name="retiros">Retiros</string>
+	<string name="citas">Citas</string>
+	<string name="estadisticas">Estadísticas</string>
+	<string name="estadisticas_aprovechables">Estadísticas de Aprovechables</string>
+	<string name="ventas">Ventas</string>
+	<string name="wiki">Guia de Reciclaje</string>
+	<string name="rutas">Rutas</string>
+	<string name="cerrar_sesion">Cerrar Sesión</string>
 
+	<!-- Atencion al cliente -->
+	<string name="servicio_cliente">Servicio al Cliente</string>
+	<string name="buzon_sugerencias">Búzon de Sugerencias</string>
+	<string name="ayuda">Ayuda</string>
+
+	<!-- Mensajes de Alerta -->
+	<string name="cuenta_desconocida">La cedula y/o contraseña no coinciden con nuestros registros.</string>
 
 	<!-- Otros -->
 	<string name="hello_blank_fragment">Proximamente…</string>
+	<string name="ver_mas">Ver más…</string>
+	<string name="default_int">0</string>
+	<string name="default_fecha">2021/08/03</string>
+	<string name="default_hora">14:00</string>
+	<string name="ultimos_mes">Último mes</string>
+	<string name="descripcion_img">Imagen de la App</string>
 </resources>

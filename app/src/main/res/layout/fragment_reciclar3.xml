@@ -14,12 +14,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="@string/fragment_reciclar3_titulo"
+        android:text="@string/confirmar_retiro"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical">
@@ -40,40 +40,40 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
-                    android:gravity="left|center_vertical"
-                    android:text="Direccion"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:gravity="start|center_vertical"
+                    android:text="@string/direccion"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:drawableLeftCompat="@drawable/ic_baseline_location_on_24" />
 
                 <TextView
                     android:id="@+id/txtReciclar3Fecha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
-                    android:gravity="left|center_vertical"
-                    android:text="2020/05/01"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:gravity="start|center_vertical"
+                    android:text="@string/default_fecha"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:drawableLeftCompat="@drawable/ic_baseline_date_range_24" />
 
                 <TextView
                     android:id="@+id/txtReciclar3Hora"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
-                    android:gravity="left|center_vertical"
-                    android:text="9:00 - 10:00"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:gravity="start|center_vertical"
+                    android:text="@string/default_hora"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:drawableStartCompat="@drawable/ic_baseline_access_time_24" />
 
                 <TextView
                     android:id="@+id/txtReciclar3TotalMateriales"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:drawableLeft="@drawable/ic_round_pie_chart_24"
-                    android:gravity="left|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:text="Total de materiales: 98"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:drawableLeftCompat="@drawable/ic_round_pie_chart_24" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -104,7 +104,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="21"
+                        android:text="@string/default_int"
                         android:textAlignment="center"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         app:drawableTopCompat="@drawable/ic_baseline_box_24" />
@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="48"
+                        android:text="@string/default_int"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         app:drawableTopCompat="@drawable/ic_baseline_bottle_24" />
                 </LinearLayout>
@@ -155,7 +155,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="23"
+                        android:text="@string/default_int"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         app:drawableTopCompat="@drawable/ic_baseline_wine_bar_24" />
                 </LinearLayout>

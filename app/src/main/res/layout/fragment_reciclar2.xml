@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="@string/fragment_reciclar2_titulo"
+        android:text="@string/fecha_hora_titulo"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <LinearLayout
@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="@string/fragment_reciclar2_fecha_retiro"
+                    android:text="@string/fecha_retiro"
                     app:drawableEndCompat="@drawable/ic_baseline_date_range_24" />
 
                 <EditText
@@ -50,7 +50,7 @@
                     android:layout_marginBottom="20dp"
                     android:ems="10"
                     android:focusable="false"
-                    android:hint="2020/05/01"
+                    android:hint="@string/default_fecha"
                     android:inputType="date"
                     android:maxLines="1"
                     android:textAlignment="center" />
@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="@string/fragment_reciclar2_hora_retiro"
+                    android:text="@string/hora_retiro"
                     app:drawableEndCompat="@drawable/ic_baseline_access_time_24" />
 
                 <EditText
@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:focusable="false"
-                    android:hint="12:00"
+                    android:hint="@string/default_hora"
                     android:inputType="date"
                     android:maxLines="1"
                     android:textAlignment="center" />

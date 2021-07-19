@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="@string/fragment_home_usuario_estadisticas"
+                    android:text="@string/estadisticas"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <View
@@ -81,7 +81,7 @@
                                 android:id="@+id/textView6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/fragment_home_usuario_default_int"
+                                android:text="@string/default_int"
                                 android:textAlignment="textEnd"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                                 android:textColor="@color/white" />
@@ -113,7 +113,7 @@
                                 android:id="@+id/textView7"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/fragment_home_usuario_default_int"
+                                android:text="@string/default_int"
                                 android:textAlignment="textEnd"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                                 android:textColor="@color/white" />
@@ -144,7 +144,7 @@
                                 android:id="@+id/textView8"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/fragment_home_usuario_default_int"
+                                android:text="@string/default_int"
                                 android:textAlignment="textEnd"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                                 android:textColor="@color/white" />
@@ -163,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_weight="5"
-                        android:text="@string/fragment_home_usuario_default_ultimos_mes"
+                        android:text="@string/ultimos_mes"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                     <Button
@@ -172,7 +172,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/fragment_home_usuario_ver_mas"
+                        android:text="@string/ver_mas"
                         android:textAlignment="center"
                         android:textColor="@color/primario" />
                 </LinearLayout>
@@ -197,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="@string/fragment_home_usuario_info"
+                    android:text="@string/info_general"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <View
@@ -237,8 +237,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="45"
+                        android:text="@string/default_int"
                         android:textAlignment="textEnd"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
@@ -264,7 +263,7 @@
                         android:layout_margin="16dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="@string/fragment_home_usuario_citas"
+                        android:text="@string/citas"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                     <TextView
@@ -272,8 +271,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="12"
+                        android:text="@string/default_int"
                         android:textAlignment="textEnd"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
@@ -307,8 +305,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:text="10"
+                        android:text="@string/default_int"
                         android:textAlignment="textEnd"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 </LinearLayout>
@@ -332,7 +329,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:text="@string/fragment_home_usuario_servicio_al_cliente"
+                    android:text="@string/servicio_cliente"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <View
@@ -362,7 +359,7 @@
                         android:layout_height="24dp"
                         android:layout_margin="16dp"
                         android:gravity="center_vertical"
-                        android:text="@string/fragment_home_usuario_ayuda"
+                        android:text="@string/ayuda"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                 </LinearLayout>
 
@@ -385,7 +382,7 @@
                         android:layout_height="24dp"
                         android:layout_margin="16dp"
                         android:gravity="center_vertical"
-                        android:text="@string/fragment_home_usuario_buzon_de_sugerencias"
+                        android:text="@string/buzon_sugerencias"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                 </LinearLayout>
 

@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="co.edu.uniquindio.reciclapp.ui.fragment.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/inicio"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="co.edu.uniquindio.reciclapp.ui.fragment.PerfilFragment"
-        android:label="@string/menu_perfil"
+        android:label="@string/perfil"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaRetiroFragment"
-        android:label="@string/menu_retiros"
+        android:label="@string/retiros"
         tools:layout="@layout/fragment_lista_retiro" />
 </navigation>

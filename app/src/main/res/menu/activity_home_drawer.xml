@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_baseline_home_24"
-            android:title="@string/menu_home" />
+            android:title="@string/inicio" />
 
         <item android:title="Recicla">
             <menu>
@@ -15,10 +15,10 @@
                     <item
                         android:id="@+id/nav_slideshow"
                         android:icon="@drawable/ic_baseline_assignment_24"
-                        android:title="@string/menu_retiros" />
+                        android:title="@string/retiros" />
                     <item
                         android:icon="@drawable/ic_baseline_menu_book_24"
-                        android:title="@string/menu_wiki" />
+                        android:title="@string/wiki" />
                 </group>
             </menu>
         </item>
@@ -29,11 +29,11 @@
                 <item
                     android:id="@+id/nav_gallery"
                     android:icon="@drawable/ic_baseline_person_24"
-                    android:title="@string/menu_perfil" />
+                    android:title="@string/perfil" />
                 <item
                     android:id="@+id/logout"
                     android:icon="@drawable/ic_baseline_logout_24"
-                    android:title="@string/menu_logout" />
+                    android:title="@string/cerrar_sesion" />
             </menu>
         </item>
     </group>

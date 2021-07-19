@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_home_admin"
             android:icon="@drawable/ic_baseline_home_24"
-            android:title="@string/menu_home" />
+            android:title="@string/inicio" />
 
         <item android:title="Actividades">
             <menu>
@@ -15,11 +15,11 @@
                     <item
                         android:id="@+id/listaCitaFragment"
                         android:icon="@drawable/ic_baseline_book_24"
-                        android:title="@string/menu_citas" />
+                        android:title="@string/citas" />
                     <item
                         android:id="@+id/rutasFragment"
                         android:icon="@drawable/ic_baseline_pin_drop_24"
-                        android:title="@string/menu_rutas" />
+                        android:title="@string/rutas" />
                 </group>
             </menu>
         </item>
@@ -30,11 +30,11 @@
                     <item
                         android:id="@+id/estadisticasFragment"
                         android:icon="@drawable/ic_round_pie_chart_24"
-                        android:title="@string/menu_estadisticas" />
+                        android:title="@string/estadisticas" />
                     <item
                         android:id="@+id/ventasFragment"
                         android:icon="@drawable/ic_baseline_attach_money_24"
-                        android:title="@string/menu_ventas" />
+                        android:title="@string/ventas" />
                 </group>
             </menu>
         </item>
@@ -59,7 +59,7 @@
                     <item
                         android:id="@+id/logout"
                         android:icon="@drawable/ic_baseline_logout_24"
-                        android:title="@string/menu_logout" />
+                        android:title="@string/cerrar_sesion" />
                 </group>
             </menu>
         </item>
