@@ -40,6 +40,21 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_unidades"
+                android:hint="@string/unidad_defecto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,13 +100,15 @@
                         android:autofillHints=""
                         android:ems="10"
                         android:gravity="center"
+                        android:maxLength="3"
                         android:inputType="number" />
 
                     <TextView
+                        android:id="@+id/lblUnidad1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal|top"
-                        android:text="@string/unidades" />
+                        android:text="@string/default_unidad" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -141,13 +158,15 @@
                         android:autofillHints=""
                         android:ems="10"
                         android:gravity="center"
+                        android:maxLength="3"
                         android:inputType="number" />
 
                     <TextView
+                        android:id="@+id/lblUnidad2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal|top"
-                        android:text="@string/unidades" />
+                        android:text="@string/default_unidad" />
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -197,13 +216,15 @@
                         android:autofillHints=""
                         android:ems="10"
                         android:gravity="center"
+                        android:maxLength="3"
                         android:inputType="number" />
 
                     <TextView
+                        android:id="@+id/lblUnidad3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal|top"
-                        android:text="@string/unidades" />
+                        android:text="@string/default_unidad"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
