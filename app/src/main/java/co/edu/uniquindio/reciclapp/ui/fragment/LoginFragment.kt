@@ -1,5 +1,6 @@
 package co.edu.uniquindio.reciclapp.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import co.edu.uniquindio.reciclapp.R
+import co.edu.uniquindio.reciclapp.model.Persona
+import co.edu.uniquindio.reciclapp.model.Rol
+import co.edu.uniquindio.reciclapp.ui.activity.AdminHomeActivity
+import co.edu.uniquindio.reciclapp.ui.activity.HomeActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -41,7 +46,14 @@ class LoginFragment : Fragment() {
             if (correo.isNotEmpty() && contrasenia.isNotEmpty()) {
                 auth.signInWithEmailAndPassword(correo, contrasenia).addOnSuccessListener {
                     val user = it.user!!
-                    Toast.makeText(this@LoginFragment.activity, user.uid, Toast.LENGTH_SHORT).show()
+                    val persona = Persona.fromString(user.displayName)
+                    val intent = if (persona?.rol == Rol.OPERADOR) {
+                        Intent(this@LoginFragment.requireContext(), AdminHomeActivity::class.java)
+                    } else {
+                        Intent(this@LoginFragment.requireContext(), HomeActivity::class.java)
+                    }
+                    startActivity(intent)
+                    this@LoginFragment.requireActivity().finish()
                 }.addOnFailureListener {
                     Toast.makeText(this@LoginFragment.activity, it.message, Toast.LENGTH_SHORT).show()
                 }

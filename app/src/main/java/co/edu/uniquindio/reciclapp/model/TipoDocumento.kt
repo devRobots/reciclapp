@@ -1,5 +1,5 @@
 package co.edu.uniquindio.reciclapp.model
 
-enum class TipoDocumento(val id: Int) {
-    CEDULA(1), NIT(2)
+enum class TipoDocumento(val id: Int, val persona: String) {
+    CEDULA(1, "Natural"), NIT(2, "Juridica")
 }

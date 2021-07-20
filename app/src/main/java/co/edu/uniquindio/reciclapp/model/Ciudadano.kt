@@ -5,7 +5,7 @@ class Ciudadano(
     apellido: String?,
     tipoDocumento: TipoDocumento,
     numeroDocumento: String,
-    telefono: String,
+    telefono: String?,
     correo: String,
     direccion: String
 ) : Persona(

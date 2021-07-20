@@ -15,15 +15,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch
 
 class HomeActivity : AppCompatActivity() {
 
+    private lateinit var auth: FirebaseAuth
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        auth = Firebase.auth
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -39,6 +45,8 @@ class HomeActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_home, R.id.nav_slideshow),
             drawerLayout)
         navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {
+            auth.signOut()
+
             val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
             this@HomeActivity.finish()

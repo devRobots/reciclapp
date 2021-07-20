@@ -29,7 +29,7 @@
 		android:orientation="vertical">
 
 		<EditText
-			android:id="@+id/nombre"
+			android:id="@+id/edtRegistroNombre"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
@@ -38,26 +38,36 @@
 			android:selectAllOnFocus="true" />
 
 		<EditText
-			android:id="@+id/txtRecolectorNombre"
+			android:id="@+id/edtRegistroApellido"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
-			android:hint="@string/cedula"
+			android:hint="@string/apellido"
+			android:inputType="none|textPersonName"
+			android:selectAllOnFocus="true" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/tipo_persona" />
+		<Spinner
+			android:id="@+id/spnRegistroTipoPersona"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:listitem="@array/tipo_personas"
+			android:selectAllOnFocus="true" />
+
+		<EditText
+			android:id="@+id/edtRegistroNumDoc"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:autofillHints=""
+			android:hint="@string/num_documento"
 			android:inputType="number|text|textEmailAddress|phone"
 			android:selectAllOnFocus="true" />
 
 		<EditText
-			android:id="@+id/edtLoginContrasenia"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:autofillHints=""
-			android:hint="@string/contraseña"
-			android:imeOptions="actionDone"
-			android:inputType="textPassword"
-			android:selectAllOnFocus="true" />
-
-		<EditText
-			android:id="@+id/correo"
+			android:id="@+id/edtRegistroCorreo"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""
@@ -67,7 +77,17 @@
 			android:selectAllOnFocus="true" />
 
 		<EditText
-			android:id="@+id/direccion"
+			android:id="@+id/edtRegistroContrasenia"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:autofillHints=""
+			android:hint="@string/contraseña"
+			android:imeOptions="actionDone"
+			android:inputType="textPassword"
+			android:selectAllOnFocus="true" />
+
+		<EditText
+			android:id="@+id/edtRegistroDireccion"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:autofillHints=""

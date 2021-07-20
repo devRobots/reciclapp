@@ -22,7 +22,14 @@
 	<!-- Generales de Formularios -->
 	<string name="nit">NIT</string>
 	<string name="cedula">Cédula</string>
+	<string name="tipo_persona">Tipo de Persona</string>
+	<string-array name="tipo_personas">
+		<item>Natural</item>
+		<item>Juridica</item>
+	</string-array>
+	<string name="num_documento">Numero de Documento</string>
 	<string name="nombre">Nombre</string>
+	<string name="apellido">Apellido</string>
 	<string name="direccion">Dirección</string>
 	<string name="nombre_completo">Nombre Completo</string>
 	<string name="correo">Correo Electronico</string>
