@@ -5,14 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListRecolectorAdapter
-import co.edu.uniquindio.reciclapp.data.local.RoomApp
-import kotlinx.coroutines.launch
 import java.util.*
 
 
@@ -24,7 +21,6 @@ import java.util.*
 class ListaRecolectorFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var roomApp: RoomApp
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,13 +40,8 @@ class ListaRecolectorFragment : Fragment() {
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(activity)
 
-        roomApp = RoomApp(requireContext())
-
-        lifecycleScope.launch {
-            val elements = roomApp.local.recolectorDAO().obtenerTodas()
-            recyclerView.adapter = ListRecolectorAdapter(elements, activity) {
-                findNavController().navigate(R.id.nav_recolector)
-            }
+        recyclerView.adapter = ListRecolectorAdapter(emptyList(), activity) {
+            findNavController().navigate(R.id.nav_recolector)
         }
     }
 }

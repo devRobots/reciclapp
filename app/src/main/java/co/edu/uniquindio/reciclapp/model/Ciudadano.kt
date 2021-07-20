@@ -1,7 +1,6 @@
 package co.edu.uniquindio.reciclapp.model
 
-class Comprador(
-    id: Long,
+class Ciudadano(
     nombre: String,
     apellido: String?,
     tipoDocumento: TipoDocumento,
@@ -10,5 +9,5 @@ class Comprador(
     correo: String,
     direccion: String
 ) : Persona(
-    nombre, apellido, tipoDocumento, numeroDocumento, Rol.NO_USUARIO, telefono, correo, direccion
+    nombre, apellido, tipoDocumento, numeroDocumento, Rol.CIUDADANO, telefono, correo, direccion
 )

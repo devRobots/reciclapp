@@ -6,10 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.local.RoomApp
-import kotlinx.coroutines.launch
+import co.edu.uniquindio.reciclapp.model.Comprador
 
 /**
  * A simple [Fragment] subclass.
@@ -17,8 +15,6 @@ import kotlinx.coroutines.launch
  * create an instance of this fragment.
  */
 class CompradorFragment : Fragment() {
-    private lateinit var roomApp: RoomApp
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_comprador, container, false)
@@ -26,21 +22,18 @@ class CompradorFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        roomApp = RoomApp(requireContext())
 
         val edtNit = view.findViewById<EditText>(R.id.txtCompradorNIT)
         val edtNombre = view.findViewById<EditText>(R.id.txtCompradorNombre)
         val edtCelular = view.findViewById<EditText>(R.id.txtCompradorCelular)
         val edtCorreo = view.findViewById<EditText>(R.id.txtCompradorCorreo)
 
-        lifecycleScope.launch {
-            val comprador = roomApp.local.compradorDAO().obtenerPorId(1)
-            if (comprador != null) {
-                edtNit?.setText(comprador.nit)
-                edtNombre?.setText(comprador.nombre)
-                edtCelular?.setText(comprador.telefono.toString())
-                edtCorreo?.setText(comprador.correo)
-            }
+        val comprador: Comprador? = null
+        if (comprador != null) {
+            edtNit?.setText(comprador.numeroDocumento)
+            edtNombre?.setText(comprador.nombre)
+            edtCelular?.setText(comprador.telefono.toString())
+            edtCorreo?.setText(comprador.correo)
         }
     }
 }

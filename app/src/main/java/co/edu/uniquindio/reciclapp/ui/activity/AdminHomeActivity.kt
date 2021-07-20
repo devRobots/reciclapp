@@ -14,21 +14,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.lifecycleScope
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.local.misc.Config
-import co.edu.uniquindio.reciclapp.data.local.RoomApp
 import kotlinx.coroutines.launch
 
 class AdminHomeActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var roomApp: RoomApp
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_home)
-
-        roomApp = RoomApp(this)
 
         val toolbar: Toolbar = findViewById(R.id.admin_toolbar)
         setSupportActionBar(toolbar)
@@ -41,10 +35,6 @@ class AdminHomeActivity : AppCompatActivity() {
                 R.id.listaCitaFragment, R.id.rutasFragment), drawerLayout
         )
         navView.menu.findItem(R.id.logout).setOnMenuItemClickListener {
-            lifecycleScope.launch {
-                roomApp.config.configDAO().actualizar(Config(1))
-            }
-
             val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
             this@AdminHomeActivity.finish()

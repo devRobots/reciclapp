@@ -5,14 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.adapter.ListRetiroAdapter
-import co.edu.uniquindio.reciclapp.data.local.RoomApp
-import kotlinx.coroutines.launch
 import java.util.*
 
 
@@ -24,7 +21,6 @@ import java.util.*
 class TabRetiroRealizadoFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var roomApp: RoomApp
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,17 +36,11 @@ class TabRetiroRealizadoFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        roomApp = RoomApp(requireContext())
-
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
 
-        lifecycleScope.launch {
-            val usuario = roomApp.config.configDAO().obtenerConfiguraciones().idUsuario
-            val elements = roomApp.local.citaDAO().obtenerFinalizadosPorUsuario(usuario!!)
-            recyclerView.adapter = ListRetiroAdapter(elements, activity){
-                findNavController().navigate(R.id.citasFragment)
-            }
+        recyclerView.adapter = ListRetiroAdapter(emptyList(), activity){
+            findNavController().navigate(R.id.citasFragment)
         }
     }
 

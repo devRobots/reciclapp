@@ -28,12 +28,12 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/edtLoginCedula"
+            android:id="@+id/edtLoginCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
-            android:hint="@string/cedula"
-            android:inputType="number|text|textEmailAddress|phone"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
             android:selectAllOnFocus="true" />
 
         <EditText

@@ -31,7 +31,7 @@ class ListCompradorAdapter(var itemList: List<Comprador>, context: Context?, val
         private var telefono: TextView = itemView.findViewById(R.id.txtListCompradorTelefono)
 
         fun binData(item: Comprador) {
-            nit.text = item.nit
+            nit.text = item.numeroDocumento
             nombre.text = item.nombre
             telefono.text = item.telefono.toString()
             itemView.setOnClickListener(listener)

@@ -1,6 +1,5 @@
 package co.edu.uniquindio.reciclapp.ui.fragment
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,19 +7,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import androidx.lifecycle.lifecycleScope
-import co.edu.uniquindio.reciclapp.ui.activity.HomeActivity
-import co.edu.uniquindio.reciclapp.ui.activity.AdminHomeActivity
+import android.widget.Toast
 import co.edu.uniquindio.reciclapp.R
-import co.edu.uniquindio.reciclapp.data.local.RoomApp
-import kotlinx.coroutines.launch
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 /**
  * A simple [Fragment] subclass.
  */
 class LoginFragment : Fragment() {
 
-    private lateinit var roomApp: RoomApp
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,49 +28,23 @@ class LoginFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        roomApp  = RoomApp(requireActivity())
+        auth = Firebase.auth
 
-        val edtCedula = view.findViewById<EditText>(R.id.edtLoginCedula)
+        val edtCedula = view.findViewById<EditText>(R.id.edtLoginCorreo)
         val edtContrasenia = view.findViewById<EditText>(R.id.edtLoginContrasenia)
 
         val btnIngresar = view.findViewById<Button>(R.id.btnLoginIngresar)
         btnIngresar?.setOnClickListener {
-            val cedula = edtCedula.text.toString()
+            val correo = edtCedula.text.toString()
             val contrasenia = edtContrasenia.text.toString()
 
-            if (cedula.isNotEmpty() && contrasenia.isNotEmpty()) {
-                esAdmin(cedula, contrasenia)
-                esUser(cedula, contrasenia)
-            }
-        }
-    }
-
-    private fun esAdmin(cedula: String, contrasenia: String) {
-        lifecycleScope.launch {
-            val admin = roomApp.local.administradorDAO().login(cedula.toInt(), contrasenia)
-            if (admin != null) {
-                val configs = roomApp.config.configDAO().obtenerConfiguraciones()
-                configs.idAdministrador = admin.id
-                roomApp.config.configDAO().actualizar(configs)
-
-                val intent = Intent(context, AdminHomeActivity::class.java)
-                startActivity(intent)
-                activity?.finish()
-            }
-        }
-    }
-
-    private fun esUser(cedula: String, contrasenia: String) {
-        lifecycleScope.launch {
-            val usuario = roomApp.local.usuarioDAO().login(cedula.toInt(), contrasenia)
-            if (usuario != null) {
-                val configs = roomApp.config.configDAO().obtenerConfiguraciones()
-                configs.idUsuario = usuario.id
-                roomApp.config.configDAO().actualizar(configs)
-
-                val intent = Intent(context, HomeActivity::class.java)
-                startActivity(intent)
-                activity?.finish()
+            if (correo.isNotEmpty() && contrasenia.isNotEmpty()) {
+                auth.signInWithEmailAndPassword(correo, contrasenia).addOnSuccessListener {
+                    val user = it.user!!
+                    Toast.makeText(this@LoginFragment.activity, user.uid, Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener {
+                    Toast.makeText(this@LoginFragment.activity, it.message, Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
