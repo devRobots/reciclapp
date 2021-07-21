@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/home_admin_nav"
+	app:startDestination="@id/nav_home_admin">
+	<fragment
+		android:id="@+id/nav_home_admin"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.HomeAdminFragment"
+		android:label="@string/inicio"
+		tools:layout="@layout/fragment_home_admin" />
+	<fragment
+		android:id="@+id/nav_recolector"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RecolectorFragment"
+		android:label="@string/recuperadores"
+		tools:layout="@layout/fragment_recolector" />
+	<fragment
+		android:id="@+id/nav_comprador"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.CompradorFragment"
+		android:label="@string/compradores"
+		tools:layout="@layout/fragment_comprador" />
+	<fragment
+		android:id="@+id/estadisticasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.EstadisticasFragment"
+		android:label="@string/estadisticas"
+		tools:layout="@layout/fragment_estadisticas" />
+	<fragment
+		android:id="@+id/ventasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.VentaFragment"
+		android:label="@string/ventas"
+		tools:layout="@layout/fragment_venta" />
+	<fragment
+		android:id="@+id/citasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.CitaFragment"
+		android:label="@string/citas"
+		tools:layout="@layout/fragment_cita" />
+	<fragment
+		android:id="@+id/rutasFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RutaFragment"
+		android:label="@string/rutas"
+		tools:layout="@layout/fragment_ruta" />
+	<fragment
+		android:id="@+id/listaRecolectorFragment2"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaRecolectorFragment"
+		android:label="@string/recuperadores" />
+	<fragment
+		android:id="@+id/listaCompradorFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaCompradorFragment"
+		android:label="@string/compradores" />
+	<fragment
+		android:id="@+id/listaCitaFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaCitaFragment"
+		android:label="@string/citas" />
+</navigation>

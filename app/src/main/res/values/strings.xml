@@ -1,9 +1,108 @@
 <resources>
-    <string name="app_name">Reciclapp</string>
+	<string name="app_name">Reciclapp</string>
 
-    <!-- Strings del Fragment Acceso -->
-    <string name="fragment_acceso_ingresar">Ingresar</string>
-    <string name="fragment_acceso_registro">Registro</string>
-    <string name="fragment_acceso_quienes_somos">¿Quiénes somos?</string>
-    <string name="fragment_acceso_content_logo">Logo de la CRQ</string>
+	<!-- No setteados -->
+	<string name="title_activity_home">HomeActivity</string>
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="action_settings">Settings</string>
+	<string name="nav_header_subtitle">android.studio@android.com</string>
+	<string name="nav_header_desc">Navigation header</string>
+
+	<!-- Fragment Reciclar 1 -->
+	<string name="reciclar_titulo">CUENTA Y RECICLA</string>
+	<string name="reciclar_subtitulo">Tu material reciclable</string>
+	<string name="papel_pregunta">¿Tienes papel para reciclar?</string>
+	<string name="unidad_defecto">Unidad por defecto</string>
+	<string-array name="unidades">
+		<item>Unidades</item>
+		<item>Kilogramos</item>
+	</string-array>
+	<string name="fecha_hora_titulo">DIA Y HORA DE RETIRO</string>
+	<string name="fecha_retiro">Fecha de Retiro</string>
+	<string name="hora_retiro">Hora de Retiro</string>
+	<string name="total_material">Total de Material</string>
+	<string name="confirmar_retiro">CONFIRMAR EL RETIRO</string>
+
+	<!-- Generales de Formularios -->
+	<string name="nit">NIT</string>
+	<string name="cedula">Cédula</string>
+	<string name="tipo_persona">Tipo de Persona</string>
+	<string-array name="tipo_personas">
+		<item>Natural</item>
+		<item>Juridica</item>
+	</string-array>
+	<string name="num_documento">Numero de Documento</string>
+	<string name="nombre">Nombre</string>
+	<string name="apellido">Apellido</string>
+	<string name="direccion">Dirección</string>
+	<string name="telefono">Telefono</string>
+	<string name="nombre_completo">Nombre Completo</string>
+	<string name="correo">Correo Electronico</string>
+	<string name="celular">Celular</string>
+	<string name="contraseña">Contraseña</string>
+	<string name="info_personal">Información Personal</string>
+	<string name="info_general">Información General</string>
+
+	<!--Generales de Controles -->
+	<string name="ingresar">Ingresar</string>
+	<string name="registro">Registro</string>
+	<string name="registrar">Registrar</string>
+	<string name="guardar">Guardar</string>
+	<string name="editar">Editar</string>
+	<string name="eliminar">Eliminar</string>
+	<string name="cancelar">Cancelar</string>
+	<string name="siguiente">Siguiente</string>
+	<string name="confirmar">Confirmar</string>
+	<string name="eliminar_cuenta">Eliminar Cuenta</string>
+	<string name="cambiar_contraseña">Cambiar Contraseña</string>
+	<string name="quienes_somos">¿Quiénes somos?</string>
+
+	<!-- Generales de Personas -->
+	<string name="compradores">Compradores</string>
+	<string name="recuperadores">Recuperadores</string>
+	<string name="usuario">Usuario</string>
+	<string name="administrador">Administrador</string>
+
+	<!-- Generales de Materiales -->
+	<string name="carton">Cartón</string>
+	<string name="vidrio">Vidrio</string>
+	<string name="plastico">Plástico</string>
+	<string name="plastico_pet">Plástico PET</string>
+
+	<!-- Generales de Citas/Retiros -->
+	<string name="cancelar_retiro">Cancelar Retiro</string>
+	<string name="aplazar_retiro">Aplazar Retiro</string>
+	<string name="cancelar_cita">Cancelar Cita</string>
+	<string name="aplazar_cita">Aplazar Cita</string>
+
+	<!-- Conceptos Generales de la App -->
+	<string name="inicio">Inicio</string>
+	<string name="perfil">Perfil</string>
+	<string name="retiros">Retiros</string>
+	<string name="citas">Citas</string>
+	<string name="estadisticas">Estadísticas</string>
+	<string name="estadisticas_aprovechables">Estadísticas de Aprovechables</string>
+	<string name="ventas">Ventas</string>
+	<string name="wiki">Guia de Reciclaje</string>
+	<string name="rutas">Rutas</string>
+	<string name="cerrar_sesion">Cerrar Sesión</string>
+
+	<!-- Atencion al cliente -->
+	<string name="servicio_cliente">Servicio al Cliente</string>
+	<string name="buzon_sugerencias">Búzon de Sugerencias</string>
+	<string name="ayuda">Ayuda</string>
+
+	<!-- Mensajes de Alerta -->
+	<string name="cuenta_desconocida">La cedula y/o contraseña no coinciden con nuestros registros.</string>
+
+	<!-- Otros -->
+	<string name="hello_blank_fragment">Proximamente…</string>
+	<string name="ver_mas">Ver más…</string>
+	<string name="default_int">0</string>
+	<string name="default_fecha">2021/08/03</string>
+	<string name="default_hora">14:00</string>
+	<string name="default_unidad">Unidades</string>
+	<string name="ultimos_mes">Último mes</string>
+	<string name="descripcion_img">Imagen de la App</string>
 </resources>

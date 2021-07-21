@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_admin"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/inicio" />
+
+        <item android:title="Actividades">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/listaCitaFragment"
+                        android:icon="@drawable/ic_baseline_book_24"
+                        android:title="@string/citas" />
+                    <item
+                        android:id="@+id/rutasFragment"
+                        android:icon="@drawable/ic_baseline_pin_drop_24"
+                        android:title="@string/rutas" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Financiero">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/estadisticasFragment"
+                        android:icon="@drawable/ic_round_pie_chart_24"
+                        android:title="@string/estadisticas" />
+                    <item
+                        android:id="@+id/ventasFragment"
+                        android:icon="@drawable/ic_baseline_attach_money_24"
+                        android:title="@string/ventas" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Usuarios">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/listaRecolectorFragment2"
+                        android:icon="@drawable/ic_baseline_hiking_24"
+                        android:title="@string/recuperadores" />
+                    <item
+                        android:id="@+id/listaCompradorFragment"
+                        android:icon="@drawable/ic_baseline_hail_24"
+                        android:title="@string/compradores" />
+                </group>
+            </menu>
+        </item>
+        <item android:title="Cuenta">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/logout"
+                        android:icon="@drawable/ic_baseline_logout_24"
+                        android:title="@string/cerrar_sesion" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -7,7 +7,39 @@
 
 	<fragment
 		android:id="@+id/accesoFragment"
-		android:name="co.edu.uniquindio.reciclapp.AccesoFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.AccesoFragment"
 		android:label="fragment_acceso"
-		tools:layout="@layout/fragment_acceso" />
+		tools:layout="@layout/fragment_acceso">
+		<action
+			android:id="@+id/action_accesoFragment_to_loginFragment"
+			app:destination="@id/loginFragment"
+			app:enterAnim="@anim/fragment_fade_enter"
+			app:exitAnim="@anim/fragment_fade_exit"
+			app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+			app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+		<action
+			android:id="@+id/action_accesoFragment_to_registroFragment"
+			app:destination="@id/registroFragment" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/loginFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.LoginFragment"
+		android:label="fragment_login"
+		tools:layout="@layout/fragment_login" >
+		<action
+			android:id="@+id/action_loginFragment_to_home_user_nav"
+			app:destination="@id/home_user_nav" />
+	</fragment>
+	<fragment
+		android:id="@+id/registroFragment"
+		android:name="co.edu.uniquindio.reciclapp.ui.fragment.RegistroFragment"
+		android:label="fragment_registro"
+		tools:layout="@layout/fragment_registro">
+		<action
+			android:id="@+id/action_registroFragment_to_home_user_nav"
+			app:destination="@id/home_user_nav" />
+	</fragment>
+	<include app:graph="@navigation/home_user_nav" />
+
 </navigation>
