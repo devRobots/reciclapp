@@ -37,12 +37,8 @@ class ListaRetiroFragment : Fragment() {
         viewPager.adapter = adapter
         val tabLayoutMediator = TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when (position) {
-                0 -> {
-                    tab.text = "Pendientes"
-                }
-                1 -> {
-                    tab.text = "Finalizados"
-                }
+                0 -> tab.text = "Pendientes"
+                1 -> tab.text = "Finalizados"
             }
         }
         tabLayoutMediator.attach()

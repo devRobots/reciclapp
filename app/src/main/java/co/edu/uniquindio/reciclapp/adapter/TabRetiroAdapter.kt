@@ -12,8 +12,8 @@ class TabRetiroAdapter(fa: FragmentActivity) :  FragmentStateAdapter(fa) {
 
     override fun createFragment(position: Int): Fragment {
         return when(position) {
-            0 -> TabRetiroRealizadoFragment()
-            else -> TabRetiroPendienteFragment()
+            0 -> TabRetiroPendienteFragment()
+            else -> TabRetiroRealizadoFragment()
         }
     }
 

@@ -36,6 +36,7 @@
 	<string name="nombre">Nombre</string>
 	<string name="apellido">Apellido</string>
 	<string name="direccion">Dirección</string>
+	<string name="telefono">Telefono</string>
 	<string name="nombre_completo">Nombre Completo</string>
 	<string name="correo">Correo Electronico</string>
 	<string name="celular">Celular</string>
@@ -68,6 +69,12 @@
 	<string name="vidrio">Vidrio</string>
 	<string name="plastico">Plástico</string>
 	<string name="plastico_pet">Plástico PET</string>
+
+	<!-- Generales de Citas/Retiros -->
+	<string name="cancelar_retiro">Cancelar Retiro</string>
+	<string name="aplazar_retiro">Aplazar Retiro</string>
+	<string name="cancelar_cita">Cancelar Cita</string>
+	<string name="aplazar_cita">Aplazar Cita</string>
 
 	<!-- Conceptos Generales de la App -->
 	<string name="inicio">Inicio</string>

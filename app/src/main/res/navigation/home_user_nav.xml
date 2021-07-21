@@ -22,4 +22,9 @@
         android:name="co.edu.uniquindio.reciclapp.ui.fragment.ListaRetiroFragment"
         android:label="@string/retiros"
         tools:layout="@layout/fragment_lista_retiro" />
+    <fragment
+        android:id="@+id/retiroFragment"
+        android:name="co.edu.uniquindio.reciclapp.ui.fragment.RetiroFragment"
+        android:label="fragment_retiro"
+        tools:layout="@layout/fragment_retiro" />
 </navigation>

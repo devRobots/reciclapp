@@ -19,10 +19,7 @@ class ListRetiroAdapter(var itemList: List<Cita>, context: Context?, val listene
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.binData(itemList[position])
-
-        holder.itemView.setOnClickListener {
-
-        }
+        holder.itemView.setOnClickListener(listener)
     }
 
     inner class ViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -36,7 +33,6 @@ class ListRetiroAdapter(var itemList: List<Cita>, context: Context?, val listene
             fecha.text = item.fecha.toString()
             hora.text = item.hora
             material.text = "3" // TODO: item.totalMaterial.toString()
-            itemView.setOnClickListener(listener)
         }
 
     }
