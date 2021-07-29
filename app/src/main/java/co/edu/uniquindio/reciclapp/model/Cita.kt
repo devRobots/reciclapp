@@ -9,6 +9,7 @@ data class Cita(
     var calificacion: Double,
     var uidRecolector: String?,
     val uidCiudadano: String
+
 ) {
     constructor() : this(Date(), "", EstadoCita.EN_PROCESO, -1.0, null, "")
 }
