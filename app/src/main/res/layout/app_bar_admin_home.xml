@@ -22,4 +22,26 @@
 
     <include layout="@layout/content_admin_home" />
 
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabMenuAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabComprador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_hail_24" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabRecolector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_hiking_24" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
