@@ -42,8 +42,10 @@ class CP002InstrumentedTest {
         )
 
         db.collection("citas").add(cita).addOnFailureListener {
-            assertThrows(it.message, it.cause!!::class.java, null)
+            assertTrue(it.message, false)
         }
+
+        assertNotNull(cita)
     }
 
 }

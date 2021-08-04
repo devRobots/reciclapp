@@ -39,14 +39,15 @@ class CP001InstrumentedTest {
 
     @Test
     fun  registrarCiudadano(){
-        val correo = "ysrosast_1@uqvirtual.edu.co"
+        val count = 2
+        val correo = "ysrosast_$count@uqvirtual.edu.co"
         val contrasenia = "123456"
 
         auth.createUserWithEmailAndPassword(correo, contrasenia).addOnSuccessListener {
             val usuario = it.user
             assertNotNull(usuario)
         }.addOnFailureListener{
-            assertThrows(it.message, it.cause!!::class.java, null)
+            assertTrue(it.message, false)
         }
     }
 
@@ -62,7 +63,7 @@ class CP001InstrumentedTest {
             assertNotNull(persona)
             assertEquals(Rol.CIUDADANO, persona!!.rol)
         }.addOnFailureListener{
-            assertThrows(it.message, it.cause!!::class.java, null)
+            assertTrue(it.message, false)
         }
     }
 
@@ -78,7 +79,7 @@ class CP001InstrumentedTest {
             assertNotNull(persona)
             assertEquals(Rol.OPERADOR, persona!!.rol)
         }.addOnFailureListener{
-            assertThrows(it.message, it.cause!!::class.java, null)
+            assertTrue(it.message, false)
         }
     }
 
