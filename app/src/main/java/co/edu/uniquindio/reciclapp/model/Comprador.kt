@@ -1,7 +1,6 @@
 package co.edu.uniquindio.reciclapp.model
 
 class Comprador(
-    id: Long,
     nombre: String,
     apellido: String?,
     tipoDocumento: TipoDocumento,
