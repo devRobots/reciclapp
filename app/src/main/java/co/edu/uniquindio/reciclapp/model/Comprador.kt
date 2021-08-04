@@ -10,4 +10,6 @@ class Comprador(
     direccion: String
 ) : Persona(
     nombre, apellido, tipoDocumento, numeroDocumento, Rol.NO_USUARIO, telefono, correo, direccion
-)
+){
+    constructor() :this("",null,TipoDocumento.NIT,"","","","")
+}

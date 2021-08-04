@@ -9,11 +9,16 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.model.Comprador
 import co.edu.uniquindio.reciclapp.model.TipoDocumento
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 /**
  * A simple [Fragment] subclass.
@@ -32,6 +37,8 @@ class CompradorFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        auth = Firebase.auth
+        db = Firebase.firestore
 
         val edtNit = view.findViewById<EditText>(R.id.txtCompradorNIT)
         val edtNombre = view.findViewById<EditText>(R.id.txtCompradorNombre)
@@ -48,11 +55,12 @@ class CompradorFragment : Fragment() {
             val direccion =  edtDireccion.text.toString().trim()
 
             val comprador = Comprador(nombre,null,TipoDocumento.NIT,nit,celular,correo,direccion)
-            db.collection("compradores").add(comprador)
+            db.collection("compradores").add(comprador).addOnSuccessListener {
+                findNavController().navigate(R.id.nav_home_admin)
+            }.addOnFailureListener {
+                Toast.makeText(activity, it.message, Toast.LENGTH_SHORT).show()
+            }
 
-            val intent = Intent(this@CompradorFragment.requireContext(), HomeAdminFragment::class.java)
-            startActivity(intent)
-            this@CompradorFragment.activity?.finish()
         }
     }
 }

@@ -6,10 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
+import android.widget.*
+import androidx.navigation.fragment.findNavController
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.model.Recolector
 import co.edu.uniquindio.reciclapp.model.TipoDocumento
@@ -73,11 +71,11 @@ class RecolectorFragment : Fragment() {
             if (correo.isNotEmpty() && numDocumento.isNotEmpty()){
                 val tipoDocumento = if (tipoPersona == TipoDocumento.CEDULA.persona) TipoDocumento.CEDULA else TipoDocumento.NIT
                 val recolector = Recolector(nombre,apellido,tipoDocumento,numDocumento,celular,correo,direccion)
-                db.collection("recolectores").add(recolector)
-
-                val intent = Intent(this@RecolectorFragment.requireContext(), HomeAdminFragment::class.java)
-                startActivity(intent)
-                this@RecolectorFragment.activity?.finish()
+                db.collection("recolectores").add(recolector).addOnSuccessListener {
+                    findNavController().navigate(R.id.nav_home_admin)
+                }.addOnFailureListener {
+                    Toast.makeText(activity, it.message, Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }

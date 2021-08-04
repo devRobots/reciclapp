@@ -8,10 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import co.edu.uniquindio.reciclapp.R
 import co.edu.uniquindio.reciclapp.model.Venta
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import java.util.*
 
 /**
@@ -34,6 +39,8 @@ class VentaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        auth = Firebase.auth
+        db = Firebase.firestore
 
         var edtPrecio = view.findViewById<EditText>(R.id.edtPrecioVenta)
 
@@ -45,10 +52,11 @@ class VentaFragment : Fragment() {
             val precio = edtPrecio.text.toString().toLong()
             val venta = Venta(fecha,hora,precio,null,null)
 
-            db.collection("ventas").add(venta)
-            val intent = Intent(this@VentaFragment.requireContext(), HomeAdminFragment::class.java)
-            startActivity(intent)
-            this@VentaFragment.activity?.finish()
+            db.collection("ventas").add(venta).addOnSuccessListener {
+                findNavController().navigate(R.id.nav_home_admin)
+            }.addOnFailureListener {
+                Toast.makeText(activity, it.message, Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
