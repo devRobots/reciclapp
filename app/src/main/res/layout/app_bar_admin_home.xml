@@ -40,6 +40,12 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_hiking_24" />
 
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabVentas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_attach_money_24" />
+
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 

@@ -36,6 +36,7 @@ class AdminHomeActivity : AppCompatActivity() {
         val fabMenuAdmin: FloatingActionsMenu = findViewById(R.id.fabMenuAdmin)
         val fabRecolector: FloatingActionButton = findViewById(R.id.fabRecolector)
         val fabComprador: FloatingActionButton = findViewById(R.id.fabComprador)
+        val fabVenta: FloatingActionButton = findViewById(R.id.fabVentas)
 
         auth = Firebase.auth
 
@@ -66,6 +67,12 @@ class AdminHomeActivity : AppCompatActivity() {
         //Fab Comprador
         fabComprador.setOnClickListener {
             navController.navigate(R.id.nav_comprador)
+            fabMenuAdmin.collapse()
+            fabMenuAdmin.visibility = View.GONE
+        }
+        //Fab Venta
+        fabVenta.setOnClickListener {
+            navController.navigate(R.id.ventasFragment)
             fabMenuAdmin.collapse()
             fabMenuAdmin.visibility = View.GONE
         }
