@@ -6,10 +6,37 @@
 	tools:context=".ui.fragment.VentaFragment">
 
 	<!-- TODO: Update blank fragment layout -->
-	<TextView
+	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:gravity="center"
-		android:text="@string/hello_blank_fragment" />
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="15dp"
+			android:hint="@string/ventas"
+			android:textAlignment="center"
+			android:textAllCaps="false"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+		<EditText
+			android:id="@+id/edtPrecioVenta"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:autofillHints=""
+			android:ems="10"
+			android:gravity="center"
+			android:inputType="number" />
+
+		<Button
+			android:id="@+id/btnVentaGuardar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginRight="15dp"
+			android:text="@string/guardar" />
+	</LinearLayout>
 
 </FrameLayout>

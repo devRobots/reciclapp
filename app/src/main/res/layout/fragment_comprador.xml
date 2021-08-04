@@ -73,6 +73,18 @@
                 android:inputType="textEmailAddress"
                 android:autofillHints="" />
 
+            <EditText
+                android:id="@+id/txtCompradorDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/direccion"
+                android:inputType="textPersonName" />
+
             <Button
                 android:id="@+id/btnCompradorGuardar"
                 android:layout_width="match_parent"

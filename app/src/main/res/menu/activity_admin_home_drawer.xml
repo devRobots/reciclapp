@@ -32,7 +32,7 @@
                         android:icon="@drawable/ic_round_pie_chart_24"
                         android:title="@string/estadisticas" />
                     <item
-                        android:id="@+id/ventasFragment"
+                        android:id="@+id/listaVentaFragment"
                         android:icon="@drawable/ic_baseline_attach_money_24"
                         android:title="@string/ventas" />
                 </group>

@@ -36,6 +36,17 @@
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_persona" />
+            <Spinner
+                android:id="@+id/spnRecolectorTipoPersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@array/tipo_personas"
+                android:selectAllOnFocus="true" />
+
             <EditText
                 android:id="@+id/txtRecolectoCedula"
                 android:layout_width="match_parent"
@@ -58,6 +69,18 @@
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtRecolectorApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/apellido"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -104,15 +127,6 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:text="@string/guardar" />
-
-            <Button
-                android:id="@+id/btnRecolectorEliminar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:backgroundTint="@color/red"
-                android:text="@string/eliminar" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
